@@ -1,0 +1,54 @@
+name: Add the authorised Mutual Futures connection
+on:
+  workflow_call:
+permissions:
+  contents: write
+  pages: write
+jobs:
+  connection:
+    if: github.repository_owner == 'auraofintelligence' && github.repository != 'auraofintelligence/mutual-futures'
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Add a small related-project connection without changing existing content
+        run: |
+          python - <<'PY'
+          from pathlib import Path
+          import os
+          allowed={'strange-but-true','auraofintelligence.github.io','p4a-xyz-cinema','p4a-oceania-cinema','p4a-native-nations-cinema','GAJRA-earth-infinity','gajra-earth-claude-build','australian-law-2012-lukes-relevance','australian-legal-engine','grain-by-grain-documentary','micronova-and-excursions','global-founder-atlas','Australian-visa-activity-atlas','legal-memory-workbench'}
+          repo=os.environ['GITHUB_REPOSITORY'].split('/',1)[1]
+          if repo not in allowed: raise SystemExit('Repository outside the explicitly related project family')
+          url='https://auraofintelligence.github.io/mutual-futures/'
+          readme=Path('README.md')
+          if readme.exists():
+              s=readme.read_text()
+              if '<!-- mutual-futures-connection -->' not in s:
+                  s+='\n\n<!-- mutual-futures-connection -->\n## Mutual Futures: connected workbench\n\n[Mutual Futures]('+url+') connects this project with Luke Nathan Hayes\'s proposed mutual business succession, Try Everything Once, Intermittent Retirement, personal intelligence, legal reflection, resilience, travel and wider civilisational horizon. The connection does not merge the projects or imply outside endorsement.\n\n[Source repository](https://github.com/auraofintelligence/mutual-futures) · [Project connections and sources]('+url+'sources.html)\n'
+                  readme.write_text(s)
+          page=Path('index.html')
+          if page.exists():
+              s=page.read_text()
+              if 'id="mutual-futures-connection"' not in s:
+                  close=s.lower().rfind('</body>')
+                  if close<0: raise SystemExit('No closing body; index left unchanged')
+                  block='\n<aside id="mutual-futures-connection" aria-label="Connected public workbench" style="max-width:1200px;margin:32px auto;padding:22px 24px;border-top:1px solid currentColor;font:inherit;line-height:1.6"><p style="margin:0"><strong>Connected workbench: </strong><a href="'+url+'" target="_blank" rel="noopener noreferrer">Mutual Futures</a> explores mutual business succession, wider working lives, intelligence, resilience and travel. <a href="'+url+'sources.html" target="_blank" rel="noopener noreferrer">Follow the project connections</a>.</p></aside>\n'
+                  page.write_text(s[:close]+block+s[close:])
+          caller=Path('.github/workflows/mutual-futures-link.yml')
+          if caller.exists(): caller.unlink()
+          PY
+      - name: Commit only the connection and remove the one-time trigger
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -A -- README.md .github/workflows/mutual-futures-link.yml
+          if [ -f index.html ]; then git add index.html; fi
+          if ! git diff --cached --quiet; then
+            git commit -m 'Connect this project reciprocally with the standalone Mutual Futures workbench'
+            git pull --rebase
+            git push
+          fi
+      - name: Request a refresh for an existing branch-built Pages site
+        continue-on-error: true
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: gh api --method POST "repos/${GITHUB_REPOSITORY}/pages/builds"
