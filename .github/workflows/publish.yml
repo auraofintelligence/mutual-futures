@@ -26,7 +26,7 @@ jobs:
         shell: bash
         run: |
           ready=true
-          for file in tools/build.py tools/fetch_assets.py tools/check.py content/site.py content/documents.json content/assets.json assets/style.css assets/app.js LICENCE.md; do
+          for file in tools/build.py tools/fetch_assets.py tools/check.py tools/publish_root.py content/site.py content/documents.json content/assets.json assets/style.css assets/app.js LICENCE.md; do
             if [ ! -f "$file" ]; then ready=false; fi
           done
           echo "ready=$ready" >> "$GITHUB_OUTPUT"
@@ -45,14 +45,17 @@ jobs:
         run: |
           python tools/check.py
           node --check assets/app.js
-      - name: Preserve the generated site in the repository
+          python tools/publish_root.py
+      - name: Preserve the generated site and root publishing mirror
         if: steps.ready.outputs.ready == 'true'
         run: |
           git config user.name 'github-actions[bot]'
           git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add site assets/images assets/asset-manifest.json
+          git add site assets/images assets/asset-manifest.json repository-metadata.json documents .nojekyll robots.txt sitemap.xml
+          git add -- '*.html'
           if ! git diff --cached --quiet; then
-            git commit -m 'Build checked static Mutual Futures pages and provenance assets'
+            git commit -m 'Build checked static pages and synchronise both publishing locations'
+            git pull --rebase origin main
             git push
           fi
       - name: Downloadable checked site
@@ -61,6 +64,30 @@ jobs:
         with:
           name: mutual-futures-site
           path: site
+          retention-days: 30
+      - name: Complete source snapshot
+        if: steps.ready.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mutual-futures-source
+          include-hidden-files: true
+          path: |
+            .github
+            .gitignore
+            README.md
+            ABOUT.md
+            LICENCE.md
+            repository-metadata.json
+            assets
+            content
+            tools
+            docs
+            documents
+            site
+            *.html
+            .nojekyll
+            robots.txt
+            sitemap.xml
           retention-days: 30
       - name: Pages artifact
         if: steps.ready.outputs.ready == 'true'
@@ -88,8 +115,8 @@ jobs:
       - name: Publish the checked site
         id: deployment
         uses: actions/deploy-pages@v4
-      - name: First-time Pages setup note
+      - name: Pages setup note
         if: failure()
         run: |
-          echo '## Publishing needs a repository setting' >> "$GITHUB_STEP_SUMMARY"
-          echo 'The checked site is built and available in the build artifact and site/ directory. If Pages is not yet enabled, open Settings > Pages > Build and deployment > Source > GitHub Actions, then re-run this workflow. Initial enablement can require administrator permissions unavailable to GITHUB_TOKEN.' >> "$GITHUB_STEP_SUMMARY"
+          echo '## Publishing configuration' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The checked site is built in site/ and mirrored into the repository root. Settings > Pages can use GitHub Actions or main / (root). Initial enablement may need an owner action when GITHUB_TOKEN lacks administrator permissions.' >> "$GITHUB_STEP_SUMMARY"
