@@ -1,41 +1,72 @@
 name: Verify the public site
+
 on:
   push:
     branches: [main]
-    paths: [.github/workflows/verify-live.yml, tools/verify_live.py]
+    paths: ['.github/workflows/verify-live.yml', 'tools/verify_live.py']
   workflow_run:
-    workflows: ['Build, check and publish Mutual Futures']
+    workflows: ['Build, check and publish Mutual Futures', 'pages build and deployment']
+    branches: [main]
     types: [completed]
   workflow_dispatch:
+
 permissions:
   contents: write
+
+concurrency:
+  group: mutual-futures-live-verification
+  cancel-in-progress: true
+
 jobs:
   verify:
+    if: github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success'
     runs-on: ubuntu-latest
+    timeout-minutes: 10
     steps:
       - uses: actions/checkout@v4
-      - name: Verify actual public HTML, assets and library downloads
+        with:
+          ref: main
+      - name: Verify exact public HTML, assets and library downloads
+        id: public_check
+        continue-on-error: true
         run: python tools/verify_live.py
-      - name: Commit the actual verification result
-        run: |
-          git config user.name 'github-actions[bot]'
-          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
-          git add docs/live-check.json README.md
-          if ! git diff --cached --quiet; then
-            git commit -m 'Record actual public Pages verification and current publishing status'
-            git pull --rebase origin main
-            git push
-          fi
       - name: Verification record
+        if: always()
         uses: actions/upload-artifact@v4
         with:
           name: mutual-futures-live-check
           path: docs/live-check.json
-      - name: Report any failed public check
+          if-no-files-found: error
+      - name: Preserve the actual verification result
+        if: always()
+        run: |
+          test -f docs/live-check.json
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add docs/live-check.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Record exact-match verification of public pages and resources'
+            git pull --rebase origin main
+            git push
+          fi
+      - name: Public verification summary
+        if: always()
         run: |
           python - <<'PY'
-          import json
+          import json, os
           from pathlib import Path
-          report=json.loads(Path('docs/live-check.json').read_text())
-          if not report['passed']:raise SystemExit('Some public checks failed. The individual requests are recorded in docs/live-check.json.')
+          p = Path('docs/live-check.json')
+          if not p.exists():
+              raise SystemExit('The verification script did not produce a report.')
+          report = json.loads(p.read_text())
+          rows = report['results']
+          passed = sum(bool(r.get('passed')) for r in rows)
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as summary:
+              summary.write(f"## Public site verification\n\n{passed}/{len(rows)} public URLs match the checked build exactly.\n\n")
+              summary.write(f"Checked: {report['checked_at_utc']}\n\n")
+              for r in rows:
+                  if not r.get('passed'):
+                      summary.write(f"- Failed: `{r['path']}` ({r['status']})\n")
+          if not report['passed']:
+              raise SystemExit('The public site differs from the checked build. See the saved report.')
           PY
