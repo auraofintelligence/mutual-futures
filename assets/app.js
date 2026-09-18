@@ -17,6 +17,7 @@
     toggle.addEventListener('click',()=>{dialog.showModal();document.body.classList.add('menu-open');toggle.setAttribute('aria-expanded','true');$('#index-search').focus();});
     const tidy=()=>{document.body.classList.remove('menu-open');toggle.setAttribute('aria-expanded','false');toggle.focus();};
     close.addEventListener('click',()=>dialog.close());dialog.addEventListener('close',tidy);
+    dialog.addEventListener('keydown',e=>{if(e.key==='Escape'){e.preventDefault();dialog.close();}});
     $('#index-search').addEventListener('input',e=>{const q=e.target.value.trim().toLowerCase();let n=0;$$('.menu-grid a').forEach(a=>{a.hidden=!a.textContent.toLowerCase().includes(q);if(!a.hidden)n++;});$('#index-count').textContent=`${n} pages`;});
   }
   const progress=$('.reading-progress');
