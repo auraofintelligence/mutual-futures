@@ -26,10 +26,14 @@ jobs:
         shell: bash
         run: |
           ready=true
-          for file in tools/build.py tools/fetch_assets.py tools/check.py tools/publish_root.py content/site.py content/documents.json content/assets.json assets/style.css assets/app.js LICENCE.md; do
-            if [ ! -f "$file" ]; then ready=false; fi
+          for file in tools/build.py tools/fetch_assets.py tools/check.py tools/publish_root.py tools/check_publishing.py content/site.py content/documents.json content/assets.json assets/style.css assets/app.js LICENCE.md; do
+            if [ ! -f "$file" ]; then
+              echo "::error::Missing required build input: $file"
+              ready=false
+            fi
           done
           echo "ready=$ready" >> "$GITHUB_OUTPUT"
+          test "$ready" = true
       - uses: actions/setup-python@v5
         if: steps.ready.outputs.ready == 'true'
         with:
@@ -46,6 +50,7 @@ jobs:
           python tools/check.py
           node --check assets/app.js
           python tools/publish_root.py
+          python tools/check_publishing.py
       - name: Preserve the generated site and root publishing mirror
         if: steps.ready.outputs.ready == 'true'
         run: |
