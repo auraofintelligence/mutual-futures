@@ -1,164 +1,506 @@
 {
-  "checked_at_utc": "2026-09-18T05:47:58.160815+00:00",
+  "checked_at_utc": "2026-09-18T05:50:09.208438+00:00",
   "base_url": "https://auraofintelligence.github.io/mutual-futures/",
-  "method": "Actual HTTP requests from GitHub Actions to the public GitHub Pages URL. Browser interaction tests are documented separately.",
+  "source_commit": "702f50b5a51306360b7ac23a794e06c12d7d3063",
+  "method": "HTTP GET of the public directory, every generated page and locally linked resource; exact SHA-256 comparison with site/. No browser interaction is implied.",
   "passed": true,
+  "request_count": 62,
   "results": [
     {
-      "path": "index.html",
+      "path": "404.html",
+      "expected_sha256": "4249bcc059d7f3635721a0f9d08d9c9e388d8a424e641499f0f8fd25004c106a",
       "status": 200,
-      "bytes": 11669,
-      "expected_content": true
+      "bytes": 644,
+      "actual_sha256": "4249bcc059d7f3635721a0f9d08d9c9e388d8a424e641499f0f8fd25004c106a",
+      "passed": true
     },
     {
-      "path": "succession.html",
+      "path": "LICENCE.md",
+      "expected_sha256": "23255ab40c163cc508112b3c9a8352155ce38197afdc78612051d77302b6d7ab",
       "status": 200,
-      "bytes": 12245,
-      "expected_content": true
-    },
-    {
-      "path": "ownership.html",
-      "status": 200,
-      "bytes": 11803,
-      "expected_content": true
-    },
-    {
-      "path": "capital.html",
-      "status": 200,
-      "bytes": 14797,
-      "expected_content": true
-    },
-    {
-      "path": "workforce.html",
-      "status": 200,
-      "bytes": 13030,
-      "expected_content": true
-    },
-    {
-      "path": "livelihoods.html",
-      "status": 200,
-      "bytes": 11633,
-      "expected_content": true
-    },
-    {
-      "path": "intelligence.html",
-      "status": 200,
-      "bytes": 14655,
-      "expected_content": true
-    },
-    {
-      "path": "law.html",
-      "status": 200,
-      "bytes": 12350,
-      "expected_content": true
-    },
-    {
-      "path": "simulation.html",
-      "status": 200,
-      "bytes": 12964,
-      "expected_content": true
-    },
-    {
-      "path": "health.html",
-      "status": 200,
-      "bytes": 11509,
-      "expected_content": true
-    },
-    {
-      "path": "resilience.html",
-      "status": 200,
-      "bytes": 12175,
-      "expected_content": true
-    },
-    {
-      "path": "galactic.html",
-      "status": 200,
-      "bytes": 11816,
-      "expected_content": true
-    },
-    {
-      "path": "travel.html",
-      "status": 200,
-      "bytes": 11806,
-      "expected_content": true
-    },
-    {
-      "path": "oceania.html",
-      "status": 200,
-      "bytes": 11489,
-      "expected_content": true
-    },
-    {
-      "path": "culture.html",
-      "status": 200,
-      "bytes": 10895,
-      "expected_content": true
-    },
-    {
-      "path": "roadmap.html",
-      "status": 200,
-      "bytes": 12894,
-      "expected_content": true
-    },
-    {
-      "path": "library.html",
-      "status": 200,
-      "bytes": 24704,
-      "expected_content": true
-    },
-    {
-      "path": "sources.html",
-      "status": 200,
-      "bytes": 27203,
-      "expected_content": true
+      "bytes": 3444,
+      "actual_sha256": "23255ab40c163cc508112b3c9a8352155ce38197afdc78612051d77302b6d7ab",
+      "passed": true
     },
     {
       "path": "about.html",
+      "expected_sha256": "5799b1ad01bcd81323fc97012204d33a59ba4e91ae1adf79ce6a8397074e4ae4",
       "status": 200,
       "bytes": 13200,
-      "expected_content": true
-    },
-    {
-      "path": "site-map.html",
-      "status": 200,
-      "bytes": 12751,
-      "expected_content": true
-    },
-    {
-      "path": "licence.html",
-      "status": 200,
-      "bytes": 11503,
-      "expected_content": true
-    },
-    {
-      "path": "assets/style.css",
-      "status": 200,
-      "bytes": 22559,
-      "expected_content": true
+      "actual_sha256": "5799b1ad01bcd81323fc97012204d33a59ba4e91ae1adf79ce6a8397074e4ae4",
+      "passed": true
     },
     {
       "path": "assets/app.js",
+      "expected_sha256": "c6b5fe4cb0b93d32a201d7414a19ea989ed073af5e8c3e1c3892791281511776",
       "status": 200,
       "bytes": 18408,
-      "expected_content": true
+      "actual_sha256": "c6b5fe4cb0b93d32a201d7414a19ea989ed073af5e8c3e1c3892791281511776",
+      "passed": true
+    },
+    {
+      "path": "assets/asset-manifest.json",
+      "expected_sha256": "e2c98a2bac24995ecf3997f049af49aea7b6b95725eea04b5b2f2e6e9d983eab",
+      "status": 200,
+      "bytes": 14633,
+      "actual_sha256": "e2c98a2bac24995ecf3997f049af49aea7b6b95725eea04b5b2f2e6e9d983eab",
+      "passed": true
+    },
+    {
+      "path": "assets/images/about.webp",
+      "expected_sha256": "7b0f7661d1c816d84e6c1c5aa9d0ba0d4bdfa1306b9b6e56c392170591bb8bfb",
+      "status": 200,
+      "bytes": 292762,
+      "actual_sha256": "7b0f7661d1c816d84e6c1c5aa9d0ba0d4bdfa1306b9b6e56c392170591bb8bfb",
+      "passed": true
+    },
+    {
+      "path": "assets/images/capital.webp",
+      "expected_sha256": "039ec37b5975cb68982a5b3023f450e01245512bd30a27be7e130bd5e08a7e89",
+      "status": 200,
+      "bytes": 247058,
+      "actual_sha256": "039ec37b5975cb68982a5b3023f450e01245512bd30a27be7e130bd5e08a7e89",
+      "passed": true
+    },
+    {
+      "path": "assets/images/culture.webp",
+      "expected_sha256": "6bdf6c53db1c03b05a6105865642994abeedd51a395d42dbbceb2a48bd50603b",
+      "status": 200,
+      "bytes": 223658,
+      "actual_sha256": "6bdf6c53db1c03b05a6105865642994abeedd51a395d42dbbceb2a48bd50603b",
+      "passed": true
     },
     {
       "path": "assets/images/favicon.png",
+      "expected_sha256": "628519b04dbb607bcdaff01838364c5818c8983fa63cae3cfd0ff88eb45bfbfa",
       "status": 200,
       "bytes": 24012,
-      "expected_content": true
+      "actual_sha256": "628519b04dbb607bcdaff01838364c5818c8983fa63cae3cfd0ff88eb45bfbfa",
+      "passed": true
     },
     {
-      "path": "documents/manifest.json",
+      "path": "assets/images/galactic.webp",
+      "expected_sha256": "4c48dd3038c16531f2d2ba0e2f159d13edb7752eb81feee34454ed7799770f32",
       "status": 200,
-      "bytes": 13233,
-      "expected_content": true
+      "bytes": 444244,
+      "actual_sha256": "4c48dd3038c16531f2d2ba0e2f159d13edb7752eb81feee34454ed7799770f32",
+      "passed": true
+    },
+    {
+      "path": "assets/images/health.webp",
+      "expected_sha256": "140c3d0e1ccfc485dfe6a8b56fdfdacc514d8aa0b77c17374f4aff0c848058cf",
+      "status": 200,
+      "bytes": 146198,
+      "actual_sha256": "140c3d0e1ccfc485dfe6a8b56fdfdacc514d8aa0b77c17374f4aff0c848058cf",
+      "passed": true
+    },
+    {
+      "path": "assets/images/home.webp",
+      "expected_sha256": "4bcf89fc8a247da0144d704899b410effff55b36f4993ee5e0d1fcafb05af9dc",
+      "status": 200,
+      "bytes": 170960,
+      "actual_sha256": "4bcf89fc8a247da0144d704899b410effff55b36f4993ee5e0d1fcafb05af9dc",
+      "passed": true
+    },
+    {
+      "path": "assets/images/intelligence.webp",
+      "expected_sha256": "7160b5656a58f2b12b024ff6d6e6b1af14c101eed2127287acb714c6eb21725f",
+      "status": 200,
+      "bytes": 195548,
+      "actual_sha256": "7160b5656a58f2b12b024ff6d6e6b1af14c101eed2127287acb714c6eb21725f",
+      "passed": true
+    },
+    {
+      "path": "assets/images/law.webp",
+      "expected_sha256": "6466f952f962286a0822f7e2e99da3b4fb018e20bde5fe4de8fadac11e42b8db",
+      "status": 200,
+      "bytes": 92222,
+      "actual_sha256": "6466f952f962286a0822f7e2e99da3b4fb018e20bde5fe4de8fadac11e42b8db",
+      "passed": true
+    },
+    {
+      "path": "assets/images/library.webp",
+      "expected_sha256": "518e50ea6ee6d19e70c446fa44f183d6ff00a045002d1019f951fcb958fa69ed",
+      "status": 200,
+      "bytes": 178372,
+      "actual_sha256": "518e50ea6ee6d19e70c446fa44f183d6ff00a045002d1019f951fcb958fa69ed",
+      "passed": true
+    },
+    {
+      "path": "assets/images/licence.webp",
+      "expected_sha256": "76185dbf86e4bea7b16615f7eb4b097ca5c7f6f9da96197da78008ae82c5fda6",
+      "status": 200,
+      "bytes": 192942,
+      "actual_sha256": "76185dbf86e4bea7b16615f7eb4b097ca5c7f6f9da96197da78008ae82c5fda6",
+      "passed": true
+    },
+    {
+      "path": "assets/images/livelihoods.webp",
+      "expected_sha256": "bccf9c366dc018ffda638f9b575efc9e7dcb0c7bf6fa95aa187ba95a676674e8",
+      "status": 200,
+      "bytes": 207492,
+      "actual_sha256": "bccf9c366dc018ffda638f9b575efc9e7dcb0c7bf6fa95aa187ba95a676674e8",
+      "passed": true
+    },
+    {
+      "path": "assets/images/oceania.webp",
+      "expected_sha256": "15881467b8c6525332156457b392a77c1e4271f9edcc28d7594408e65cf66428",
+      "status": 200,
+      "bytes": 28998,
+      "actual_sha256": "15881467b8c6525332156457b392a77c1e4271f9edcc28d7594408e65cf66428",
+      "passed": true
+    },
+    {
+      "path": "assets/images/ownership.webp",
+      "expected_sha256": "441f7defc0f2740b89c34eeabcce62ee75a97f5e57a2c996af56dd372c7d6d4f",
+      "status": 200,
+      "bytes": 236172,
+      "actual_sha256": "441f7defc0f2740b89c34eeabcce62ee75a97f5e57a2c996af56dd372c7d6d4f",
+      "passed": true
+    },
+    {
+      "path": "assets/images/resilience.webp",
+      "expected_sha256": "5fcf58973cfde8c65f0a1153573173dcdb977f9a5d63104417fc8b0cf6e405a0",
+      "status": 200,
+      "bytes": 175532,
+      "actual_sha256": "5fcf58973cfde8c65f0a1153573173dcdb977f9a5d63104417fc8b0cf6e405a0",
+      "passed": true
+    },
+    {
+      "path": "assets/images/roadmap.webp",
+      "expected_sha256": "b4d837dcc9d2f31520747cc78b497bcc4f07b3ccc5afb1193fd63328e3713120",
+      "status": 200,
+      "bytes": 272900,
+      "actual_sha256": "b4d837dcc9d2f31520747cc78b497bcc4f07b3ccc5afb1193fd63328e3713120",
+      "passed": true
+    },
+    {
+      "path": "assets/images/simulation.webp",
+      "expected_sha256": "ac27012bc116f0697f0d6c4187fdb8ca609897fa99445e4b8d4facec02d84e54",
+      "status": 200,
+      "bytes": 205988,
+      "actual_sha256": "ac27012bc116f0697f0d6c4187fdb8ca609897fa99445e4b8d4facec02d84e54",
+      "passed": true
+    },
+    {
+      "path": "assets/images/sitemap.webp",
+      "expected_sha256": "bc86261abf8b688563f4b97eec1e25a0f112a7967a675923ecdd25b472716899",
+      "status": 200,
+      "bytes": 251838,
+      "actual_sha256": "bc86261abf8b688563f4b97eec1e25a0f112a7967a675923ecdd25b472716899",
+      "passed": true
+    },
+    {
+      "path": "assets/images/sources.webp",
+      "expected_sha256": "2b20a8df43d1f2d2e3944d81ddfffa058eb31991ccabb82fb4722360573974c0",
+      "status": 200,
+      "bytes": 220660,
+      "actual_sha256": "2b20a8df43d1f2d2e3944d81ddfffa058eb31991ccabb82fb4722360573974c0",
+      "passed": true
+    },
+    {
+      "path": "assets/images/succession.webp",
+      "expected_sha256": "92ec835276745ba0c1806cbf6fdbb7511f150f82665646a16a7b0bf36d06847e",
+      "status": 200,
+      "bytes": 144652,
+      "actual_sha256": "92ec835276745ba0c1806cbf6fdbb7511f150f82665646a16a7b0bf36d06847e",
+      "passed": true
+    },
+    {
+      "path": "assets/images/travel.webp",
+      "expected_sha256": "bfe50558ebe6e7e451003fec6eb6585e128d92ba1b3d5fcd2c698b40a6d1597f",
+      "status": 200,
+      "bytes": 132470,
+      "actual_sha256": "bfe50558ebe6e7e451003fec6eb6585e128d92ba1b3d5fcd2c698b40a6d1597f",
+      "passed": true
+    },
+    {
+      "path": "assets/images/workforce.webp",
+      "expected_sha256": "4b917ddaae097cb0d27461efdb1eef1bd88b9e170ad0e55165dffc8d3024f268",
+      "status": 200,
+      "bytes": 223196,
+      "actual_sha256": "4b917ddaae097cb0d27461efdb1eef1bd88b9e170ad0e55165dffc8d3024f268",
+      "passed": true
+    },
+    {
+      "path": "assets/style.css",
+      "expected_sha256": "c7e0a23f38d015b76b373c732932a0d3fc8600ca2defef98f9aa7c44a7ec0bb3",
+      "status": 200,
+      "bytes": 22559,
+      "actual_sha256": "c7e0a23f38d015b76b373c732932a0d3fc8600ca2defef98f9aa7c44a7ec0bb3",
+      "passed": true
+    },
+    {
+      "path": "capital.html",
+      "expected_sha256": "7c36a6658df6dfb4ff841371311c78674b9052b3582c19e9841ae6e800f959e8",
+      "status": 200,
+      "bytes": 14797,
+      "actual_sha256": "7c36a6658df6dfb4ff841371311c78674b9052b3582c19e9841ae6e800f959e8",
+      "passed": true
+    },
+    {
+      "path": "culture.html",
+      "expected_sha256": "de68329be3599b6e8ce3e4f46f93f1baca60e22f614b5826838d66787e95a847",
+      "status": 200,
+      "bytes": 10895,
+      "actual_sha256": "de68329be3599b6e8ce3e4f46f93f1baca60e22f614b5826838d66787e95a847",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/aukus-public-inquiry.md",
+      "expected_sha256": "0b6eb5706e4f446f6247b599001d45d28ad5f030ec79d10ef9aefdaee7b4ce70",
+      "status": 200,
+      "bytes": 1689,
+      "actual_sha256": "0b6eb5706e4f446f6247b599001d45d28ad5f030ec79d10ef9aefdaee7b4ce70",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/belau-protopian-gambit.md",
+      "expected_sha256": "8308673e29ec28c571e479ecae6c6e46b4702b3bf3848e6bf34f5eb0e411eb65",
+      "status": 200,
+      "bytes": 1934,
+      "actual_sha256": "8308673e29ec28c571e479ecae6c6e46b4702b3bf3848e6bf34f5eb0e411eb65",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/eggs-and-baskets.md",
+      "expected_sha256": "3e00adc6ae953b5669ac267dfee14e02fb2e49ac89e133862e750b8060a5ba1f",
+      "status": 200,
+      "bytes": 1786,
+      "actual_sha256": "3e00adc6ae953b5669ac267dfee14e02fb2e49ac89e133862e750b8060a5ba1f",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/fair-go-ai-age.md",
+      "expected_sha256": "7e5ae493a73cb5c92ecf40007ee080eb50b110a20302aab39627b9e39ffbbdb2",
+      "status": 200,
+      "bytes": 1831,
+      "actual_sha256": "7e5ae493a73cb5c92ecf40007ee080eb50b110a20302aab39627b9e39ffbbdb2",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/local-government-funding.md",
+      "expected_sha256": "d2950f282fc02bb05efff57c9692774f8e339ca5a6b696e6cd63daf961bc8c19",
+      "status": 200,
+      "bytes": 1832,
+      "actual_sha256": "d2950f282fc02bb05efff57c9692774f8e339ca5a6b696e6cd63daf961bc8c19",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/ocean-of-peace.md",
+      "expected_sha256": "90cdba8c220b4087a47f184f8db6066ee68f03a8d71013029a268872b4952177",
+      "status": 200,
+      "bytes": 1736,
+      "actual_sha256": "90cdba8c220b4087a47f184f8db6066ee68f03a8d71013029a268872b4952177",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/oceania-health-ai-surge.md",
+      "expected_sha256": "6f052e894e2748d6309d606b87629cd552c38bbd0effc1cab6583e52b98a73b7",
+      "status": 200,
+      "bytes": 1745,
+      "actual_sha256": "6f052e894e2748d6309d606b87629cd552c38bbd0effc1cab6583e52b98a73b7",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/queensland-heart-first.md",
+      "expected_sha256": "05055ad8dd69365abfc97723cd34de41e6eb444ec1ffccb3468ad27b140b6910",
+      "status": 200,
+      "bytes": 1742,
+      "actual_sha256": "05055ad8dd69365abfc97723cd34de41e6eb444ec1ffccb3468ad27b140b6910",
+      "passed": true
+    },
+    {
+      "path": "documents/guides/spec-driven-governance.md",
+      "expected_sha256": "c62132002f792548fc291ced982e652b4d5168c0c1c12696b6ee0b09e0944b10",
+      "status": 200,
+      "bytes": 1864,
+      "actual_sha256": "c62132002f792548fc291ced982e652b4d5168c0c1c12696b6ee0b09e0944b10",
+      "passed": true
     },
     {
       "path": "documents/guides/vuvale-union.md",
+      "expected_sha256": "21cff7e0ac1cdd452186dece9e69361d9bc9c72cd7ae684bbcebcd122fada412",
       "status": 200,
       "bytes": 1818,
-      "expected_content": true
+      "actual_sha256": "21cff7e0ac1cdd452186dece9e69361d9bc9c72cd7ae684bbcebcd122fada412",
+      "passed": true
+    },
+    {
+      "path": "documents/manifest.json",
+      "expected_sha256": "3f3192df9b7e65f8315e674ca0b58bdcf860cbf4d92319e51470d87de1af537b",
+      "status": 200,
+      "bytes": 13233,
+      "actual_sha256": "3f3192df9b7e65f8315e674ca0b58bdcf860cbf4d92319e51470d87de1af537b",
+      "passed": true
+    },
+    {
+      "path": "galactic.html",
+      "expected_sha256": "dc06a21ca9e44d22e71529b2547bfb48655c434abf4e7eeda61a90f2b602d157",
+      "status": 200,
+      "bytes": 11816,
+      "actual_sha256": "dc06a21ca9e44d22e71529b2547bfb48655c434abf4e7eeda61a90f2b602d157",
+      "passed": true
+    },
+    {
+      "path": "health.html",
+      "expected_sha256": "8b4b5ddf672ab7efb785521f57751379be5700069155c9bb81d2d8698183e654",
+      "status": 200,
+      "bytes": 11509,
+      "actual_sha256": "8b4b5ddf672ab7efb785521f57751379be5700069155c9bb81d2d8698183e654",
+      "passed": true
+    },
+    {
+      "path": "index.html",
+      "expected_sha256": "a9e0aedc0089f15c0ea78f2b553de0bae341d9517be03603635929936107f2d6",
+      "status": 200,
+      "bytes": 11669,
+      "actual_sha256": "a9e0aedc0089f15c0ea78f2b553de0bae341d9517be03603635929936107f2d6",
+      "passed": true
+    },
+    {
+      "path": "intelligence.html",
+      "expected_sha256": "5fbde2e923cd725075cfd75f93c8b5ae13df36f3fef183bbeb88cb346f616b6b",
+      "status": 200,
+      "bytes": 14655,
+      "actual_sha256": "5fbde2e923cd725075cfd75f93c8b5ae13df36f3fef183bbeb88cb346f616b6b",
+      "passed": true
+    },
+    {
+      "path": "law.html",
+      "expected_sha256": "3f035803e0712cc68bbb0a590de8c9eb918eb05cc5bae40bcc65d339fa17af78",
+      "status": 200,
+      "bytes": 12350,
+      "actual_sha256": "3f035803e0712cc68bbb0a590de8c9eb918eb05cc5bae40bcc65d339fa17af78",
+      "passed": true
+    },
+    {
+      "path": "library.html",
+      "expected_sha256": "5a83a80573ece81b4bc28a60a8d3a8c50321614921fae29198dd3cb8c3204fee",
+      "status": 200,
+      "bytes": 24704,
+      "actual_sha256": "5a83a80573ece81b4bc28a60a8d3a8c50321614921fae29198dd3cb8c3204fee",
+      "passed": true
+    },
+    {
+      "path": "licence.html",
+      "expected_sha256": "3d6c8d56bba4afb05e0194e8b33083acdc90d12ccf7b68cf521060b458ac30fe",
+      "status": 200,
+      "bytes": 11503,
+      "actual_sha256": "3d6c8d56bba4afb05e0194e8b33083acdc90d12ccf7b68cf521060b458ac30fe",
+      "passed": true
+    },
+    {
+      "path": "livelihoods.html",
+      "expected_sha256": "e8195b385b0fc1992955ae510025b0b8c872e5922478f6875b4b1a1cf2b90b8b",
+      "status": 200,
+      "bytes": 11633,
+      "actual_sha256": "e8195b385b0fc1992955ae510025b0b8c872e5922478f6875b4b1a1cf2b90b8b",
+      "passed": true
+    },
+    {
+      "path": "oceania.html",
+      "expected_sha256": "90aad49c825df09dc05ddb162deaab939b8c1f71ed31f66b5ba7f3ab12348f14",
+      "status": 200,
+      "bytes": 11489,
+      "actual_sha256": "90aad49c825df09dc05ddb162deaab939b8c1f71ed31f66b5ba7f3ab12348f14",
+      "passed": true
+    },
+    {
+      "path": "ownership.html",
+      "expected_sha256": "4602a1428cfe2db5650a9030c6240be9e3bb70f74a244270e7f99c7000416bff",
+      "status": 200,
+      "bytes": 11803,
+      "actual_sha256": "4602a1428cfe2db5650a9030c6240be9e3bb70f74a244270e7f99c7000416bff",
+      "passed": true
+    },
+    {
+      "path": "resilience.html",
+      "expected_sha256": "9ec1bd507bf251e694ae46a92151dd6bc9f87b843f34717d381d711a8a845da8",
+      "status": 200,
+      "bytes": 12175,
+      "actual_sha256": "9ec1bd507bf251e694ae46a92151dd6bc9f87b843f34717d381d711a8a845da8",
+      "passed": true
+    },
+    {
+      "path": "roadmap.html",
+      "expected_sha256": "ca51f7e4615ec761a6fbcfea735976b403c1878693eefc8465cce85071186d18",
+      "status": 200,
+      "bytes": 12894,
+      "actual_sha256": "ca51f7e4615ec761a6fbcfea735976b403c1878693eefc8465cce85071186d18",
+      "passed": true
+    },
+    {
+      "path": "robots.txt",
+      "expected_sha256": "a0b706063eb1134283b4e91d70e092db0657665dc5eb77024479845843bd5f89",
+      "status": 200,
+      "bytes": 96,
+      "actual_sha256": "a0b706063eb1134283b4e91d70e092db0657665dc5eb77024479845843bd5f89",
+      "passed": true
+    },
+    {
+      "path": "simulation.html",
+      "expected_sha256": "f3479a4b578052e14e4257e4cca02df8ffa111c89f7c0b413524eb896a47d9f5",
+      "status": 200,
+      "bytes": 12964,
+      "actual_sha256": "f3479a4b578052e14e4257e4cca02df8ffa111c89f7c0b413524eb896a47d9f5",
+      "passed": true
+    },
+    {
+      "path": "site-map.html",
+      "expected_sha256": "abe21e2213a917cc8c11123b4742573dfc4c86a019746d592da0c151b1a5357b",
+      "status": 200,
+      "bytes": 12751,
+      "actual_sha256": "abe21e2213a917cc8c11123b4742573dfc4c86a019746d592da0c151b1a5357b",
+      "passed": true
+    },
+    {
+      "path": "sitemap.xml",
+      "expected_sha256": "c61fbec1f5b45f0023fb102bf97998c32f1deb8de7beaa291d9e37d53a687e08",
+      "status": 200,
+      "bytes": 1919,
+      "actual_sha256": "c61fbec1f5b45f0023fb102bf97998c32f1deb8de7beaa291d9e37d53a687e08",
+      "passed": true
+    },
+    {
+      "path": "sources.html",
+      "expected_sha256": "0e94b105112040d5721677f9a7f259be88e3f2283f2dc4423d27faaf5e09b004",
+      "status": 200,
+      "bytes": 27203,
+      "actual_sha256": "0e94b105112040d5721677f9a7f259be88e3f2283f2dc4423d27faaf5e09b004",
+      "passed": true
+    },
+    {
+      "path": "succession.html",
+      "expected_sha256": "097fd546f57ccdcc823944877bf2639408d81ac3f73f536aea115877aed5650b",
+      "status": 200,
+      "bytes": 12245,
+      "actual_sha256": "097fd546f57ccdcc823944877bf2639408d81ac3f73f536aea115877aed5650b",
+      "passed": true
+    },
+    {
+      "path": "travel.html",
+      "expected_sha256": "f60dfc45f987b344b4b94f0137e54d8de572b410f826d89267424b73396550ba",
+      "status": 200,
+      "bytes": 11806,
+      "actual_sha256": "f60dfc45f987b344b4b94f0137e54d8de572b410f826d89267424b73396550ba",
+      "passed": true
+    },
+    {
+      "path": "workforce.html",
+      "expected_sha256": "92d5740a60d4a27358758c7649674bd61be8de23239169ebdf77b470a26712f1",
+      "status": 200,
+      "bytes": 13030,
+      "actual_sha256": "92d5740a60d4a27358758c7649674bd61be8de23239169ebdf77b470a26712f1",
+      "passed": true
+    },
+    {
+      "path": "/",
+      "expected_sha256": "a9e0aedc0089f15c0ea78f2b553de0bae341d9517be03603635929936107f2d6",
+      "status": 200,
+      "bytes": 11669,
+      "actual_sha256": "a9e0aedc0089f15c0ea78f2b553de0bae341d9517be03603635929936107f2d6",
+      "passed": true
     }
   ]
 }
