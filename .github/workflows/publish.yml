@@ -1,0 +1,95 @@
+name: Build, check and publish Mutual Futures
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency:
+  group: mutual-futures-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    outputs:
+      ready: ${{ steps.ready.outputs.ready }}
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check that all build inputs have arrived
+        id: ready
+        shell: bash
+        run: |
+          ready=true
+          for file in tools/build.py tools/fetch_assets.py tools/check.py content/site.py content/documents.json content/assets.json assets/style.css assets/app.js LICENCE.md; do
+            if [ ! -f "$file" ]; then ready=false; fi
+          done
+          echo "ready=$ready" >> "$GITHUB_OUTPUT"
+      - uses: actions/setup-python@v5
+        if: steps.ready.outputs.ready == 'true'
+        with:
+          python-version: '3.12'
+      - name: Fetch and record source illustrations
+        if: steps.ready.outputs.ready == 'true'
+        run: python tools/fetch_assets.py
+      - name: Build every static page and source guide
+        if: steps.ready.outputs.ready == 'true'
+        run: python tools/build.py
+      - name: Check links, page structure, documents and scripts
+        if: steps.ready.outputs.ready == 'true'
+        run: |
+          python tools/check.py
+          node --check assets/app.js
+      - name: Preserve the generated site in the repository
+        if: steps.ready.outputs.ready == 'true'
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add site assets/images assets/asset-manifest.json
+          if ! git diff --cached --quiet; then
+            git commit -m 'Build checked static Mutual Futures pages and provenance assets'
+            git push
+          fi
+      - name: Downloadable checked site
+        if: steps.ready.outputs.ready == 'true'
+        uses: actions/upload-artifact@v4
+        with:
+          name: mutual-futures-site
+          path: site
+          retention-days: 30
+      - name: Pages artifact
+        if: steps.ready.outputs.ready == 'true'
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: site
+      - name: Build report
+        if: steps.ready.outputs.ready == 'true'
+        run: |
+          echo '## Mutual Futures build' >> "$GITHUB_STEP_SUMMARY"
+          cat site/build-report.md >> "$GITHUB_STEP_SUMMARY"
+
+  deploy:
+    needs: build
+    if: needs.build.outputs.ready == 'true'
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+        with:
+          enablement: true
+      - name: Publish the checked site
+        id: deployment
+        uses: actions/deploy-pages@v4
+      - name: First-time Pages setup note
+        if: failure()
+        run: |
+          echo '## Publishing needs a repository setting' >> "$GITHUB_STEP_SUMMARY"
+          echo 'The checked site is built and available in the build artifact and site/ directory. If Pages is not yet enabled, open Settings > Pages > Build and deployment > Source > GitHub Actions, then re-run this workflow. Initial enablement can require administrator permissions unavailable to GITHUB_TOKEN.' >> "$GITHUB_STEP_SUMMARY"
