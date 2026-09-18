@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://auraofintelligence.github.io/mutual-futures/sitemap.xml

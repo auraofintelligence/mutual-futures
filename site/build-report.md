@@ -1,0 +1,7 @@
+- 21 chapter and utility pages, plus a custom 404.
+- Four browser-local tools.
+- 10 source reading guides.
+- 0 unchanged original documents present in this build.
+- 14 project connections and 15 external source records.
+- Raster illustrations, no bundled fonts, no SVG.
+- Standalone public URL: https://auraofintelligence.github.io/mutual-futures/
