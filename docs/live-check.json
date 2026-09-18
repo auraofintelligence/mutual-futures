@@ -1,0 +1,164 @@
+{
+  "checked_at_utc": "2026-09-18T05:47:27.612401+00:00",
+  "base_url": "https://auraofintelligence.github.io/mutual-futures/",
+  "method": "Actual HTTP requests from GitHub Actions to the public GitHub Pages URL. Browser interaction tests are documented separately.",
+  "passed": true,
+  "results": [
+    {
+      "path": "index.html",
+      "status": 200,
+      "bytes": 11669,
+      "expected_content": true
+    },
+    {
+      "path": "succession.html",
+      "status": 200,
+      "bytes": 12245,
+      "expected_content": true
+    },
+    {
+      "path": "ownership.html",
+      "status": 200,
+      "bytes": 11803,
+      "expected_content": true
+    },
+    {
+      "path": "capital.html",
+      "status": 200,
+      "bytes": 14797,
+      "expected_content": true
+    },
+    {
+      "path": "workforce.html",
+      "status": 200,
+      "bytes": 13030,
+      "expected_content": true
+    },
+    {
+      "path": "livelihoods.html",
+      "status": 200,
+      "bytes": 11633,
+      "expected_content": true
+    },
+    {
+      "path": "intelligence.html",
+      "status": 200,
+      "bytes": 14655,
+      "expected_content": true
+    },
+    {
+      "path": "law.html",
+      "status": 200,
+      "bytes": 12350,
+      "expected_content": true
+    },
+    {
+      "path": "simulation.html",
+      "status": 200,
+      "bytes": 12964,
+      "expected_content": true
+    },
+    {
+      "path": "health.html",
+      "status": 200,
+      "bytes": 11509,
+      "expected_content": true
+    },
+    {
+      "path": "resilience.html",
+      "status": 200,
+      "bytes": 12175,
+      "expected_content": true
+    },
+    {
+      "path": "galactic.html",
+      "status": 200,
+      "bytes": 11816,
+      "expected_content": true
+    },
+    {
+      "path": "travel.html",
+      "status": 200,
+      "bytes": 11806,
+      "expected_content": true
+    },
+    {
+      "path": "oceania.html",
+      "status": 200,
+      "bytes": 11489,
+      "expected_content": true
+    },
+    {
+      "path": "culture.html",
+      "status": 200,
+      "bytes": 10895,
+      "expected_content": true
+    },
+    {
+      "path": "roadmap.html",
+      "status": 200,
+      "bytes": 12894,
+      "expected_content": true
+    },
+    {
+      "path": "library.html",
+      "status": 200,
+      "bytes": 24704,
+      "expected_content": true
+    },
+    {
+      "path": "sources.html",
+      "status": 200,
+      "bytes": 27203,
+      "expected_content": true
+    },
+    {
+      "path": "about.html",
+      "status": 200,
+      "bytes": 13200,
+      "expected_content": true
+    },
+    {
+      "path": "site-map.html",
+      "status": 200,
+      "bytes": 12751,
+      "expected_content": true
+    },
+    {
+      "path": "licence.html",
+      "status": 200,
+      "bytes": 11503,
+      "expected_content": true
+    },
+    {
+      "path": "assets/style.css",
+      "status": 200,
+      "bytes": 22559,
+      "expected_content": true
+    },
+    {
+      "path": "assets/app.js",
+      "status": 200,
+      "bytes": 18408,
+      "expected_content": true
+    },
+    {
+      "path": "assets/images/favicon.png",
+      "status": 200,
+      "bytes": 24012,
+      "expected_content": true
+    },
+    {
+      "path": "documents/manifest.json",
+      "status": 200,
+      "bytes": 13233,
+      "expected_content": true
+    },
+    {
+      "path": "documents/guides/vuvale-union.md",
+      "status": 200,
+      "bytes": 1818,
+      "expected_content": true
+    }
+  ]
+}

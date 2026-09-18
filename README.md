@@ -6,13 +6,13 @@ A standalone public workbench by Luke Nathan Hayes / Strange But True / Aura of 
 
 **Repository:** https://github.com/auraofintelligence/mutual-futures
 
-**Intended public page:** https://auraofintelligence.github.io/mutual-futures/
+**Public page:** https://auraofintelligence.github.io/mutual-futures/
 
 ## Build and publishing status
 
 The complete static website is committed in [`site/`](site/). GitHub Actions successfully generated and checked the site on 18 September 2026. It contains 21 chapter and utility pages plus a custom 404, four browser-local tools, ten source reading guides, fourteen project connections and fifteen external source records. See [`site/build-report.md`](site/build-report.md) and the [checked build run](https://github.com/auraofintelligence/mutual-futures/actions/runs/35311007789).
 
-**The public Pages deployment is not yet verified live.** The build passed, but the first-time Pages enablement step returned `Resource not accessible by integration`. An owner can resolve that setting at [Settings > Pages](https://github.com/auraofintelligence/mutual-futures/settings/pages): under Build and deployment, select **GitHub Actions** as the source. Then re-run the failed deployment or run the publishing workflow from the [Actions page](https://github.com/auraofintelligence/mutual-futures/actions/workflows/publish.yml).
+**The public site is live and verified.** The HTTP check confirmed all 21 chapter and utility pages, the shared stylesheet and script, the favicon and the source-library downloads. See [live-check.json](docs/live-check.json) for the date and individual requests. The build supports either GitHub Actions or main / (root) publishing.
 
 No Notion, Google Drive or other staging service is needed by the website or its deployment workflow.
 
@@ -22,7 +22,7 @@ No Notion, Google Drive or other staging service is needed by the website or its
 - A searchable site index, previous/next chapter navigation, back-to-top controls, keyboard access and reduced-motion support.
 - Browser-local tools for capital allocation, work-and-life planning, permissions and dependency scenarios. These are exploratory tools, not financial forecasts or a complete simulation of society.
 - A source library with ten reading guides, original-document metadata and checksums. **The unchanged PDF/DOCX originals are not yet present in this repository.** Reading guides are not labelled as original documents.
-- Fourteen related-project links with their respective purposes. An outbound connection does not itself confirm a reciprocal edit to the linked project.
+- Fourteen related-project links with their respective purposes. The [reciprocal-link audit](docs/reciprocal-links.json) confirms backlinks in all fourteen source READMEs and thirteen source homepages; the legal engine is a repository-only source.
 - A [comprehensive About description](ABOUT.md), source attribution and [Strange But True Public Source Licence](LICENCE.md).
 
 The site does not collect accounts, analytics, personal profiles or form submissions. No font files are bundled. Source-project illustrations retain their provenance. The implementation contains no SVG assets.
