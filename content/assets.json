@@ -1,0 +1,23 @@
+{
+ "home":["grain-by-grain-documentary","assets/img/hero-home.webp","Island shore, dawn and a broad cosmic sky"],
+ "succession":["grain-by-grain-documentary","assets/img/hero-production.webp","A conceptual community production team by the bay"],
+ "ownership":["grain-by-grain-documentary","assets/img/hero-playbook.webp","Hands and tactile choices across a shared map"],
+ "capital":["auraofintelligence.github.io","assets/media/home--gallery-10.webp","An imagined transparent digital ledger"],
+ "workforce":["auraofintelligence.github.io","assets/media/home--gallery-15.webp","An imagined workshop for practical learning"],
+ "livelihoods":["auraofintelligence.github.io","assets/media/home--gallery-19.webp","A conceptual landscape of shared participation"],
+ "intelligence":["auraofintelligence.github.io","assets/media/home--gallery-04.webp","A conceptual personal digital-twin interface"],
+ "law":["grain-by-grain-documentary","assets/img/hero-boundaries.webp","A conceptual research threshold between records and interpretation"],
+ "simulation":["auraofintelligence.github.io","assets/media/home--gallery-06.webp","A conceptual world-building environment"],
+ "health":["auraofintelligence.github.io","assets/media/home--gallery-07.webp","A conceptual wellbeing and life-planning interface"],
+ "resilience":["grain-by-grain-documentary","assets/img/hero-runtime.webp","A conceptual journey from local life to cosmic scales"],
+ "galactic":["grain-by-grain-documentary","assets/img/hero-mission.webp","An imagined living island above connected subterranean spaces"],
+ "travel":["grain-by-grain-documentary","assets/img/hero-field-map.webp","An exploratory map of connected research and places"],
+ "oceania":["p4a-oceania-cinema","assets/p4a-map-card.webp","Regional civic-map concept artwork"],
+ "culture":["auraofintelligence.github.io","assets/media/home--gallery-12.webp","A conceptual music-creation studio"],
+ "roadmap":["auraofintelligence.github.io","assets/media/home--gallery-18.webp","A conceptual long-lived subterranean habitat"],
+ "library":["auraofintelligence.github.io","assets/media/home--gallery-03.webp","A conceptual interface for organising personal knowledge"],
+ "sources":["auraofintelligence.github.io","assets/media/home--gallery-13.webp","A conceptual planetary scientific interface"],
+ "about":["auraofintelligence.github.io","assets/media/home--gallery-05.webp","An imagined space for reflection"],
+ "sitemap":["auraofintelligence.github.io","assets/media/home--gallery-08.webp","A conceptual environment for configurable software"],
+ "licence":["auraofintelligence.github.io","assets/media/home--gallery-09.webp","An imagined device and permissions interface"]
+}
