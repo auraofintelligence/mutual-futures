@@ -51,7 +51,10 @@ for d in manifest:
   originals+=1;p=SITE/d['original_path']
   if not p.exists() or hashlib.sha256(p.read_bytes()).hexdigest()!=d['sha256']:errors.append('Original checksum mismatch: '+d['id'])
 if originals<len(manifest):warnings.append(f'{len(manifest)-originals} originals are not in this repository build; the library explicitly reports this.')
-if len(pages)!=22:errors.append(f'Expected 22 HTML pages, found {len(pages)}')
+import importlib.util
+spec=importlib.util.spec_from_file_location('site_content',ROOT/'content/site.py');content=importlib.util.module_from_spec(spec);spec.loader.exec_module(content)
+expected={p['slug']+'.html' for p in content.PAGES}|{'404.html'}
+if set(pages)!=expected:errors.append('Page inventory differs from content: '+str(set(pages)^expected))
 result={'html_pages':len(pages),'source_guides':len(manifest),'originals_present':originals,'errors':errors,'warnings':warnings}
 write_utf8(SITE/'check-report.json', json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))

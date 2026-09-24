@@ -1,8 +1,8 @@
 # Mutual Futures
 
-**Pass on the knowledge. Upgrade the future.**
+**An AI future worth living in.**
 
-A public proposal by Luke Nathan Hayes. It explores how businesses could continue under shared ownership when their owners retire, and how shared resources could support learning, useful AI, reliable incomes and more choice in life. The wider pages explore care, public decision-making, community resilience, travel and long-term possibilities.
+A public proposal by Luke Nathan Hayes for global systems change during the AI and automation transition, guided by Joyful Responsible Abundance. GAJRA Earth connects human self-alignment and AI alignment; Mutual Futures connects productive ownership, income, learning, care and time. Queens contributes women's leadership and enterprise development. C-Hour recognises voluntary contribution alongside paid work and shared prosperity.
 
 **Repository:** https://github.com/auraofintelligence/mutual-futures
 
@@ -10,11 +10,11 @@ A public proposal by Luke Nathan Hayes. It explores how businesses could continu
 
 ## Build and publishing status
 
-The readability update uses one font family and four text roles, with an 18px minimum for body text, navigation, labels, sources and tool controls. Hero artwork is shown at full opacity without a dark overlay, above a separate text area. The favicon is original AI-generated artwork created for Mutual Futures; its prompt and files are recorded in [favicon-generation.md](docs/favicon-generation.md). Build files use explicit UTF-8 and LF line endings for consistent Windows and GitHub output.
+The site uses one font family and four text roles, with an 18px minimum. Titles and introductions precede full-width artwork displayed at its natural proportions, without cropping or dark overlays. The favicon is original AI-generated artwork; its prompt and files are recorded in [favicon-generation.md](docs/favicon-generation.md). The [whole-systems review](docs/whole-systems-editorial-review.md) explains the 24 September content, layout and image revision. Build files use explicit UTF-8 and LF line endings.
 
-The complete static website is committed in [`site/`](site/). GitHub Actions successfully generated and checked the site on 18 September 2026. It contains 21 chapter and utility pages plus a custom 404, four browser-local tool pages, ten source reading guides, fourteen project connections and fifteen external source records. See [`site/build-report.md`](site/build-report.md) and the [checked build run](https://github.com/auraofintelligence/mutual-futures/actions/runs/35311007789).
+The complete static website is committed in [`site/`](site/). It contains 25 chapter and utility pages plus a custom 404, four browser-local tool pages, thirteen reading guides, three unchanged originals, seventeen project connections and fifteen external source records. See [`site/build-report.md`](site/build-report.md).
 
-**The public site is live and verified.** The HTTP check confirmed all 21 chapter and utility pages, the shared stylesheet and script, the favicon and the source-library downloads. See [live-check.json](docs/live-check.json) for the date and individual requests. The build supports either GitHub Actions or main / (root) publishing.
+The build supports GitHub Actions or main / (root) publishing. The live-verification workflow compares deployed pages and linked downloads with the checked build by checksum. Use the dated workflow artifact for the release under review; the older [live-check.json](docs/live-check.json) is a historical snapshot.
 
 No Notion, Google Drive or other staging service is needed by the website or its deployment workflow.
 
@@ -23,8 +23,8 @@ No Notion, Google Drive or other staging service is needed by the website or its
 - Multi-page, responsive HTML with a neutral light theme, consistent typography, original photorealistic AI concept visuals and an original PNG favicon.
 - A searchable site index, previous/next chapter navigation, back-to-top controls, keyboard access and reduced-motion support.
 - Browser-local tools for capital allocation, work-and-life planning, permissions and dependency scenarios. These are exploratory tools, not financial forecasts or a complete simulation of society.
-- A source library with ten reading guides, original-document metadata and checksums. **The unchanged PDF/DOCX originals are not yet present in this repository.** Reading guides are not labelled as original documents.
-- Fourteen related-project links with their respective purposes. The [reciprocal-link audit](docs/reciprocal-links.json) confirms backlinks in all fourteen source READMEs and thirteen source homepages; the legal engine is a repository-only source.
+- A source library with thirteen reading guides and three unchanged originals: the current C-Hour, Queens and UNGA81 plans. The ten earlier originals remain unavailable in this repository.
+- Seventeen related-project records with distinct purposes. The [reciprocal-link audit](docs/reciprocal-links.json) covers the original fourteen connections, not the three newly added records.
 - A [comprehensive About description](ABOUT.md), source attribution and [Strange But True Public Source Licence](LICENCE.md).
 
 The site does not collect accounts, analytics, personal profiles or form submissions. No font files are bundled. Source-project illustrations retain their provenance. The implementation contains no SVG assets.

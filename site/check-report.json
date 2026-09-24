@@ -1,7 +1,7 @@
 {
-  "html_pages": 22,
-  "source_guides": 10,
-  "originals_present": 0,
+  "html_pages": 26,
+  "source_guides": 13,
+  "originals_present": 3,
   "errors": [],
   "warnings": [
     "10 originals are not in this repository build; the library explicitly reports this."

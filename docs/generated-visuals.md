@@ -125,3 +125,47 @@ File: `assets/images/australian-space.webp`. Unchanged original: `assets/images/
 Prompt:
 
 Use case: photorealistic-natural. Original wide 16:9 cinematic editorial concept photograph for Mutual Futures showing ambitious Australian manufacturing of future technologies. Photographic realism, bright legible daylight, sophisticated real materials, natural diverse adult people with correct anatomy. Experienced older experts teach younger engineers as an established business upgrades. No readable text, logos, watermarks, collage, cartoons, painting, bicycles, rustic crafts, weapons, fantasy holograms or generic handshake poses. Clear safe boundaries around machinery. This is a future concept, not a photograph of an existing project. Scene: An Australian space-robotics engineering company manufacturing future lunar exploration systems in a bright aerospace cleanroom and adjacent sealed regolith testing chamber. Foreground: an older systems engineer and two younger adult engineers in appropriate cleanroom coats inspect a compact uncrewed lunar rover with rugged wheels, sensor mast and articulated sample arm. Through glass behind them a six-legged non-human biomimetic inspection robot tests footholds on a realistic enclosed rocky terrain bed. A small satellite with folded solar panels rests on a protected integration stand. Emphasise Australian scientific manufacturing capability, knowledge transfer and civil exploration. No astronauts without protection on the moon, no giant moon cities, no military weapons, no patriotic flags, no fantasy holograms.
+
+## Whole-systems revision, 24 September 2026
+
+Generated with the built-in OpenAI image generation tool. Four replacement concepts reduce each scene to one main machine and a recognisable task. These are illustrations of proposed work, not engineering drawings or photographs of operating projects. Visual review checks composition and obvious structural ambiguity, not engineering feasibility. The earlier assets remain archived but are no longer displayed.
+
+### australian-aviation-v2
+
+Web asset: `assets/images/australian-aviation-v2.webp`
+
+Original: `assets/images/australian-aviation-v2-original.png`
+
+Prompt:
+
+Create a new original photorealistic editorial concept image for Mutual Futures, landscape 16:9. Bright natural daylight, believable contemporary Australian engineering workshop, eucalyptus or Australian dry landscape visible outside, realistic materials and scale, no text, logos, flags, glowing holograms, cartoons or decorative futuristic objects. One primary machine only. Clear functional construction, coherent joints and mounting points, no duplicated or floating parts. Entire primary machine visible, generous framing. This illustrates a proposed industry direction, not a real company. A modest 3 metre wingspan uncrewed electric survey aircraft parked in a clean regional hangar. Simple conventional fixed wing monoplane: one central fuselage, matching straight left and right wings, a single vertical tail fin and paired horizontal tail surfaces at the rear, single stopped two-blade nose propeller, three ordinary landing wheels firmly on concrete floor. No helicopter rotors, VTOL booms or biomimetic wings. Full aircraft in three-quarter side view. An older engineer and younger woman inspect a removable battery compartment from the side, clear of propeller, using a tablet on a separate wheeled bench. Aircraft occupies most of scene, spare tools neatly stored.
+
+### australian-robotics-v2
+
+Web asset: `assets/images/australian-robotics-v2.webp`
+
+Original: `assets/images/australian-robotics-v2-original.png`
+
+Prompt:
+
+Create a new original photorealistic editorial concept image for Mutual Futures, landscape 16:9. Bright natural daylight, believable contemporary Australian engineering workshop, eucalyptus or Australian dry landscape visible outside, realistic materials and scale, no text, logos, flags, glowing holograms, cartoons or decorative futuristic objects. One primary machine only. Clear functional construction, coherent joints and mounting points, no duplicated or floating parts. Entire primary machine visible, generous framing. This illustrates a proposed industry direction, not a real company. One compact humanoid robot upper-body assembly securely bolted at its waist to a heavy steel test stand fixed to the workshop floor. No legs. Simple torso with exactly two shoulders, two arms with clearly separated shoulder, elbow and wrist joints, one parallel gripper at each wrist; compact camera sensor head. Power disconnected and arms resting in support cradles. A mature female roboticist explains the elbow joint to a younger male technician standing beside her; neither hand intersects the machine. Practical engineering, clear cables restrained along arms, conventional test bench and laptop. No other robots, animal shapes or extra limbs.
+
+### australian-marine-v2
+
+Web asset: `assets/images/australian-marine-v2.webp`
+
+Original: `assets/images/australian-marine-v2-original.png`
+
+Prompt:
+
+Create a new original photorealistic editorial concept image for Mutual Futures, landscape 16:9. Bright natural daylight, believable contemporary Australian engineering workshop, eucalyptus or Australian dry landscape visible outside, realistic materials and scale, no text, logos, flags, glowing holograms, cartoons or decorative futuristic objects. One primary machine only. Clear functional construction, coherent joints and mounting points, no duplicated or floating parts. Entire primary machine visible, generous framing. This illustrates a proposed industry direction, not a real company. One small 2.5 metre autonomous coastal survey catamaran on two padded maintenance cradles in an Australian waterfront workshop. Exactly two parallel slim hulls joined by a simple rectangular deck and two structural cross beams. A modest centre-mounted mast with small GPS antenna and one camera, visible bolted attachments. A single compact electric propulsion pod under the stern of each hull, in matching sensible positions. A side access hatch is open and one technician checks the battery cabling while an older marine engineer observes. Clear coherent proportions, unobstructed three-quarter side view with both hulls visible. No fish robots, passenger ferries or extra vessels.
+
+### australian-space-v2
+
+Web asset: `assets/images/australian-space-v2.webp`
+
+Original: `assets/images/australian-space-v2-original.png`
+
+Prompt:
+
+Create a new original photorealistic editorial concept image for Mutual Futures, landscape 16:9. Bright natural daylight, believable contemporary Australian engineering workshop, eucalyptus or Australian dry landscape visible outside, realistic materials and scale, no text, logos, flags, glowing holograms, cartoons or decorative futuristic objects. One primary machine only. Clear functional construction, coherent joints and mounting points, no duplicated or floating parts. Entire primary machine visible, generous framing. This illustrates a proposed industry direction, not a real company. One compact four-wheel planetary exploration rover prototype on a flat workshop test floor next to a tray of ochre regolith simulant, in an Australian space engineering facility. A simple rectangular chassis, exactly four equal robust metal wheels, one wheel at each corner on clear matching supports; the far side wheels partly visible consistently in three-quarter view. A short central mast carries paired navigation cameras, a flat solar panel lies on top of chassis. No arms, extra legs or suspension tangles. Two engineers, older man and younger woman, inspect recorded test results at a separate bench, no touching moving rover. The prototype is stationary, full body and all visible wheel contacts clearly framed.

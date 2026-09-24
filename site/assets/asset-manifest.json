@@ -396,5 +396,45 @@
     "bytes": 263628,
     "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
     "original": "assets/images/australian-space-original.png"
+  },
+  {
+    "key": "australian-aviation-v2",
+    "file": "assets/images/australian-aviation-v2.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Engineers inspect a battery compartment in a conventional fixed-wing uncrewed aircraft in a regional Australian hangar.",
+    "sha256": "3dd31c797a74ef9e98c1aee06172bfcf4de72cd56874581e9319aec627ffabf2",
+    "bytes": 204580,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-aviation-v2-original.png"
+  },
+  {
+    "key": "australian-robotics-v2",
+    "file": "assets/images/australian-robotics-v2.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced engineer explains a humanoid robot upper body, secured to a test fixture, to a younger colleague.",
+    "sha256": "6617f59c645bb929121b60cf5e2df107bb2c81763ba86d22ae2bd7337fa0cd2f",
+    "bytes": 206218,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-robotics-v2-original.png"
+  },
+  {
+    "key": "australian-marine-v2",
+    "file": "assets/images/australian-marine-v2.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Two marine technicians inspect an autonomous survey catamaran supported on maintenance cradles.",
+    "sha256": "879a55b8ce251c72113467d040bf9752bc28b52d934d2d29e3b0537de12db7a7",
+    "bytes": 176652,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-marine-v2-original.png"
+  },
+  {
+    "key": "australian-space-v2",
+    "file": "assets/images/australian-space-v2.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "A compact four-wheel rover prototype with a camera mast and solar panel stands beside a test bed in an Australian engineering facility.",
+    "sha256": "d27f5f376b0476e3a7d8d19da1496486fbff67702d2d4b820d1c04272245f1bb",
+    "bytes": 254220,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-space-v2-original.png"
   }
 ]

@@ -1,29 +1,17 @@
 # About Mutual Futures
 
-**Public page:** https://auraofintelligence.github.io/mutual-futures/
+Mutual Futures is Luke Nathan Hayes's proposal for global systems change during the AI and automation transition, guided by Joyful Responsible Abundance. It connects productive ownership with income, learning, care, personal agency and time for life.
 
-**Repository:** https://github.com/auraofintelligence/mutual-futures
+GAJRA Earth, the Global Association for Joyful Responsible Abundance on Earth, provides the guiding principle for human self-alignment and AI alignment. The Queens plan contributes women's leadership, enterprise development and access to capital. C-Hour contributes recognition of voluntary human effort separately from money and outcomes. Luke's UNGA81 contribution sets out the wider argument as a personal contribution, not an official United Nations programme.
 
-Mutual Futures is Luke Nathan Hayes's public workbench connecting voluntary business succession with mutual wealth, practical upgrading and a wider transition in working life. Existing staffed businesses and customer relationships supply productive capability. Member ownership, paid learning, Try Everything Once and Intermittent Retirement explore how that capability could support more possible lives.
+Business succession is one practical opportunity: preserve experienced people's knowledge, provide a fair exit and enable younger generations to advance the enterprise with AI, robotics and extended reality learning. New enterprises, research, public services and shared infrastructure offer further routes. The ambition includes manufacturing robots and autonomous vehicles for land, sea, air and space.
 
-The wider architecture includes universal intelligence and universal adequate income; the personal Aura of Intelligence permissions layer; radical overcompliance and source-grounded reflection on Australian law and international obligations; civic health research; simulations and contingency planning; existential resilience; world travel; creative participation; and Kardashev galactic games as a long-horizon exploration. Luke's proposed 2031 cyber-republic referendum horizon is attributed to him, not presented as a government announcement or predicted result.
+The site provides 25 chapter and utility pages, a custom 404, four browser-local tool pages, thirteen source guides and three unchanged current source documents. Ten earlier originals are not present. It uses a light theme, one font, four text sizes, an 18-pixel minimum and full-width uncropped artwork. New concept images and the favicon were generated for the project. Some earlier source-project illustrations retain their original provenance.
 
-The site is a connected research and design environment, not an acquisition fund, investment offer, registered cooperative, medical service, legal authority or completed civilisational system. Readers can inspect the source family, original-document records, prototype tools, illustrative calculations and unresolved design questions. Employment, health participation, commercial ownership, cultural authority and political choice remain separate relationships. No founder or other veto powers are proposed.
+The website is a proposal and a set of planning tools. It does not establish an operating fund, registered cooperative, employment programme or C-Hour verification service. The tools do not connect to banks, employers or public systems. There are no accounts, analytics or form submissions; optional saved tool drafts remain in the visitor's browser.
 
-## The website
+The [editorial review](docs/whole-systems-editorial-review.md) records the source analysis and rationale for the revised information flow. [Artwork prompts and file paths](docs/generated-visuals.md) document the generated visual assets.
 
-Twenty-one distinct chapters plus an accessible 404 page. Four browser-local tools explore capital allocation, a work-and-life itinerary, personal permissions and a dependency scenario. The document library records ten supplied working papers and submissions with page pointers and checksums. Generated pages use plain HTML, CSS and JavaScript, raster source-project illustrations, a PNG favicon, reduced-motion support, keyboard navigation, a searchable index and Markdown exports. There are no accounts, analytics, embedded third-party players or bundled fonts.
+Concept, source family and direction: Luke Nathan Hayes / Strange But True / Aura of Intelligence. Website prepared with ChatGPT. Source collaborators retain their credits.
 
-## Repository description
-
-Mutual wealth through business succession, AI upgrading and Try Everything Once. Explore Intermittent Retirement, universal intelligence and adequate income, legal reflection, civic health, resilience, travel and Kardashev horizons. Public workbench: https://auraofintelligence.github.io/mutual-futures/
-
-## Topics
-
-mutual-wealth, business-succession, cooperatives, workforce-transition, try-everything-once, intermittent-retirement, universal-intelligence, adequate-income, sovereign-ai, digital-twins, legal-reflection, existential-resilience, civic-health, queensland, oceania, gajra-earth, aura-of-intelligence, kardashev, world-travel, github-pages
-
-## Authorship and licence
-
-Concept, source family and direction: Luke Nathan Hayes / Strange But True / Aura of Intelligence, Minjerribah, Queensland, Australia. This implementation was prepared with ChatGPT. Earlier source projects retain their own Luke and collaborator credits; this does not rewrite their authorship.
-
-Strange But True Public Source Licence: non-commercial reuse with attribution, commercial and institutional rights reserved for separate written permission. See LICENCE.md. This is public-source work, not an unrestricted open-source licence.
+Strange But True Public Source Licence: non-commercial reuse with attribution; commercial and institutional rights reserved for separate written permission. See [LICENCE.md](LICENCE.md). This is public-source work, not an unrestricted open-source licence.

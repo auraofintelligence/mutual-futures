@@ -3,7 +3,7 @@ SITE = {
  'name':'Mutual Futures', 'owner':'Luke Nathan Hayes', 'date':'18 September 2026',
  'url':'https://auraofintelligence.github.io/mutual-futures/',
  'repo':'https://github.com/auraofintelligence/mutual-futures',
- 'description':'Generational business handovers and civilisation upgrades through shared ownership, AI, robotics and extended reality (XR) just-in-time learning. Explore the proposal, sources and tools.',
+ 'description':'Global systems change during the AI and automation transition, guided by Joyful Responsible Abundance. Connect shared ownership, income, learning, care and human and AI alignment.',
  'topics':['mutual-wealth','business-succession','cooperatives','workforce-transition','try-everything-once','intermittent-retirement','universal-intelligence','adequate-income','sovereign-ai','digital-twins','legal-reflection','existential-resilience','civic-health','queensland','oceania','gajra-earth','aura-of-intelligence','kardashev','world-travel','github-pages']
 }
 def sec(title, text='', **kw): return dict(title=title,text=text,**kw)
@@ -42,12 +42,21 @@ SOURCES = [
  dict(id='S15',title='GitHub: Configure Pages action',url='https://github.com/actions/configure-pages',kind='Official implementation source',checked='18 September 2026',text='Pages deployment configuration. Initial enablement can require permissions beyond the workflow GITHUB_TOKEN; the deployment record reports the actual outcome.')
 ]
 
+PROJECTS.extend([
+ dict(id='P15',title='500 Queens',url='https://auraofintelligence.github.io/500-Queens-VC-2026/index.html',repo='500-Queens-VC-2026',role='Women’s leadership, enterprise and capital',text='A proposed pathway into real enterprise leadership, decision-making authority and productive assets. The planning numbers are starting ambitions, not enrolled participants or committed funding.'),
+ dict(id='P16',title='UNGA81: Joyful Responsible Abundance',url='https://auraofintelligence.github.io/UNGA81-Luke-Hayes/',repo='UNGA81-Luke-Hayes',role='The global argument and invitation',text='Luke Nathan Hayes’s personal contribution connects human purpose, shared capability, ownership, livelihoods and alignment. It is not an official United Nations programme.'),
+ dict(id='P17',title='C-Hour introduction',url='https://auraofintelligence.github.io/C-Hour-introduction/',repo='C-Hour-introduction',role='Voluntary contribution within a whole life',text='The current plan recognises verified voluntary human time separately from money and outcomes. It favours participant-controlled, conversational records and leaves the design open to revision.')
+])
+
 PAGES = []
 from pathlib import Path
 for chapter_file in sorted((Path(__file__).parent / "chapters").glob("*.py")):
  exec(compile(chapter_file.read_text(encoding='utf-8'), str(chapter_file), "exec"), globals())
 
-TIMELINE = [('2026','The public workbench','Publish the architecture, source shelf and bounded tools. Establish a verified view of potential participating businesses rather than rely on exploratory marketplace counts.','Current website; proposed operating work'),
+PAGE_ORDER=['index','gajra','ownership','succession','leadership','capital','workforce','livelihoods','community-hours','intelligence','law','simulation','health','resilience','galactic','travel','oceania','culture','roadmap','take-part','library','sources','about','site-map','licence']
+PAGES.sort(key=lambda p:PAGE_ORDER.index(p['slug']))
+
+TIMELINE = [('2026','Connect the proposals and invite practical work','Explain the global purpose, make the source plans accessible and develop specific starting briefs with interested people.','Current website; proposed operating work'),
 ('Next operating stage','An actual succession and upgrade','A negotiated acquisition or partnership, with funding, management, employee arrangements, permitted data and a measurable transition plan. No transaction is announced here.','Proposed; no fixed date'),
 ('Learning network','Work, rest and knowledge transfer','Test paid learning, supervised rotations, management continuity, shared services and funded time away. Record outcomes before generalising.','Proposed; evidence-dependent'),
 ('No later than 2031',"Luke's legal-reflection and referendum horizon",'Luke proposes comprehensive reflection on Australian law and international obligations before a cyber-republic referendum by 2031. It is not an announced referendum, an entitlement to one or a forecast of an outcome.',"Author's proposed horizon"),
