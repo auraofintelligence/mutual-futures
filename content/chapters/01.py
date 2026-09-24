@@ -3,8 +3,8 @@ PAGES.extend([{'slug': 'index',
   'title': 'Pass on the knowledge.<br>Upgrade the future.',
   'intro': 'As established business owners retire and change chapters, younger generations can '
            'learn from what they know and take those businesses further. Mutual Futures proposes '
-           'shared ownership, AI, robotics and extended reality (XR) just-in-time learning as a path from business '
-           'handovers to wider civilisation upgrades.',
+           'shared ownership, AI, robotics and extended reality (XR) just-in-time learning as a '
+           'path from business handovers to wider civilisation upgrades.',
   'kicker': 'Mutual Futures / a Strange but True site',
   'image': 'civilisation-upgrade',
   'accent': 'gold',
@@ -15,13 +15,13 @@ PAGES.extend([{'slug': 'index',
                         'sale and a paid, agreed handover could support their next chapter while '
                         'giving younger generations access to that knowledge.\n'
                         '\n'
-                        'The new owners and staff could then combine it with AI, robotics and extended reality (XR) '
-                        'learning to improve production, services and working life. Shared '
-                        'ownership would connect the resulting value with the people building that '
-                        'next stage.',
+                        'The new owners and staff could then combine it with AI, robotics and '
+                        'extended reality (XR) learning to improve production, services and '
+                        'working life. Shared ownership would connect the resulting value with the '
+                        'people building that next stage.',
                 'statement': 'Preserve what people built. Expand what people can become.',
                 'refs': ['P01', 'P02', 'P10'],
-                'visual': 'handover-ai'},
+                'visual': 'australian-food'},
                {'title': 'Upgrade the business and support the people',
                 'text': 'The aim is to help an established business do more with its skills, '
                         'equipment and knowledge. Technology would be chosen around the work that '
@@ -37,11 +37,23 @@ PAGES.extend([{'slug': 'index',
                                    'working arrangements.',
                            'href': None},
                           {'title': 'Extended reality for learning',
-                           'text': 'Extended reality combines virtual, augmented and mixed reality. '
-                                   'It can show digital guidance beside real equipment or provide a simulation to practise in. Learn '
-                                   'before taking on unfamiliar responsibilities.',
-                           'href': None}],
-                'visual': 'xr-learning'},
+                           'text': 'Extended reality combines virtual, augmented and mixed '
+                                   'reality. It can show digital guidance beside real equipment or '
+                                   'provide a simulation to practise in. Learn before taking on '
+                                   'unfamiliar responsibilities.',
+                           'href': None}]},
+               {'title': 'Make the next generation of technology here',
+                'text': 'The ambition includes Australian businesses designing and manufacturing '
+                        'robots and autonomous vehicles for land, sea, air and space. Autonomous '
+                        'means a machine can carry out defined tasks without someone controlling '
+                        'every movement.\n'
+                        '\n'
+                        'Humanoid robots have a human-like shape. Other designs could learn from '
+                        'animals: walking legs for uneven ground, fins for underwater inspection '
+                        'or wings for flight. This is called biomimicry. The useful shape depends '
+                        'on the job. Experienced makers could pass on their knowledge as younger '
+                        'teams develop, test and build these systems.',
+                'visual': 'australian-robotics'},
                {'title': 'From a business upgrade to a civilisation upgrade',
                 'text': 'The larger ambition is to connect improvements across the systems people '
                         'depend on: production, food, energy, transport, healthcare, learning and '
@@ -50,7 +62,12 @@ PAGES.extend([{'slug': 'index',
                         '\n'
                         'This is a proposed direction, with each step needing evidence that it '
                         'works. The purpose is greater shared capability and wealth, with more '
-                        'freedom to learn, create, travel, care and enjoy life.'},
+                        'freedom to learn, create, travel, care and enjoy life.\n'
+                        '\n'
+                        'That could involve food processors, building firms, freight operators, '
+                        'marine workshops, health practices, engineering consultancies and energy '
+                        'or water businesses. Each would bring different skills and choose '
+                        'improvements suited to its work.'},
                {'title': 'Choose a starting point',
                 'text': '',
                 'cards': [{'title': 'Keep a business going',
@@ -99,8 +116,8 @@ PAGES.extend([{'slug': 'index',
   'label': 'Business succession',
   'title': 'A fair exit.<br>A shared beginning.',
   'intro': 'A retiring owner gains a fair exit and room for their next chapter. Younger '
-           'generations learn from the knowledge built over a lifetime, while AI, robotics and extended reality (XR) '
-           'help them advance the business and share in its future.',
+           'generations learn from the knowledge built over a lifetime, while AI, robotics and '
+           'extended reality (XR) help them advance the business and share in its future.',
   'kicker': '01 / Productive continuity',
   'image': 'handover-ai',
   'accent': 'gold',
@@ -127,6 +144,17 @@ PAGES.extend([{'slug': 'index',
                                    'wants to finance retirement risk.',
                            'href': None}],
                 'refs': ['S05']},
+               {'title': 'Many industries, different paths forward',
+                'text': 'The idea could apply across Australian manufacturing, food production, '
+                        'construction, transport, healthcare and professional services. A handover '
+                        'would begin with the business as it is, then work out which new '
+                        'capabilities its people want to develop.\n'
+                        '\n'
+                        'A precision workshop might make robot components. A marine business might '
+                        'develop autonomous survey vessels. An aviation supplier might work '
+                        'towards electric cargo aircraft or bird-inspired drones. These are '
+                        'possible directions, not announced acquisitions or products.',
+                'visual': 'australian-aviation'},
                {'title': 'A fair sale and a plan for the future',
                 'text': 'The owner would receive an agreed price for the business. The new owners '
                         'would take on its costs, responsibilities and risks. Future profits could '
@@ -171,11 +199,11 @@ PAGES.extend([{'slug': 'index',
                                    'working arrangements.',
                            'href': None},
                           {'title': 'Extended reality for learning',
-                           'text': 'Extended reality combines virtual, augmented and mixed reality. '
-                                   'It can show digital guidance beside real equipment or provide a simulation to practise in. Learn '
-                                   'before taking on unfamiliar responsibilities.',
-                           'href': None}],
-                'visual': 'xr-learning'},
+                           'text': 'Extended reality combines virtual, augmented and mixed '
+                                   'reality. It can show digital guidance beside real equipment or '
+                                   'provide a simulation to practise in. Learn before taking on '
+                                   'unfamiliar responsibilities.',
+                           'href': None}]},
                {'title': 'Connect businesses that can help each other',
                 'text': 'A repair workshop, fabricator and transport business might share skills '
                         'and services. Food producers, distributors and caterers might do the '
@@ -192,14 +220,19 @@ PAGES.extend([{'slug': 'index',
            'give people a clear say in shared businesses and a fair share of the benefits, with '
            'clear rules about costs, responsibilities and leaving.',
   'kicker': '02 / Ownership and stewardship',
-  'image': 'ownership',
+  'image': 'australian-marine',
   'accent': 'mint',
   'sections': [{'title': 'How the pieces could fit together',
                 'text': 'Local businesses would keep serving their customers. A shared '
                         'organisation could help arrange purchases and finance. A proposed '
                         'training cooperative, ready SET Co-op, could connect people with paid '
                         'learning and work placements. Each would need clear responsibilities and '
-                        'rules for working together.',
+                        'rules for working together.\n'
+                        '\n'
+                        'In an imagined marine engineering business, shared ownership could '
+                        'connect the people maintaining vessels today with those developing '
+                        'electric propulsion, autonomous survey craft and underwater robots. '
+                        'Members would decide which work to fund and how to share its benefits.',
                 'cards': [{'title': 'Operating businesses',
                            'text': 'Continue serving customers through capable local management, '
                                    'with clearly defined member participation.',
@@ -213,8 +246,7 @@ PAGES.extend([{'slug': 'index',
                                    'cooperative connects paid learning, placements, shared '
                                    'equipment and transition support.',
                            'href': None}],
-                'refs': ['D03', 'D05'],
-                'visual': 'handover-ai'},
+                'refs': ['D03', 'D05']},
                {'title': 'How members could share ownership',
                 'text': 'Co-operatives are one possible legal structure. Queensland guidance '
                         'describes both distributing co-operatives, which can share eligible '

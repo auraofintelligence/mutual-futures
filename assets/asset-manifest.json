@@ -286,5 +286,115 @@
     "bytes": 555500,
     "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
     "original": "assets/images/civilisation-upgrade-original.png"
+  },
+  {
+    "key": "australian-food",
+    "file": "assets/images/australian-food.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced food-production specialist teaches younger technicians beside automated citrus grading equipment in regional Australia.",
+    "sha256": "5f234666f264bd63c1331262817555e661f4fcad776c3e9b7bbf19866f550da0",
+    "bytes": 258236,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-food-original.png"
+  },
+  {
+    "key": "australian-building",
+    "file": "assets/images/australian-building.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced builder mentors younger engineers in an Australian modular-building factory using robotics and mixed-reality inspection.",
+    "sha256": "05108ae0585508c34295b06a83d37b6381504e4f0e232adfdb4136fb58c575bc",
+    "bytes": 305326,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-building-original.png"
+  },
+  {
+    "key": "australian-logistics",
+    "file": "assets/images/australian-logistics.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An older freight operator and younger colleagues plan work beside automated pallet handling and electric delivery trucks at an Australian depot.",
+    "sha256": "1089aa17812ec0dedd035559458e0e7b46b742f854426bbbdf15747ffa54b55c",
+    "bytes": 275420,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-logistics-original.png"
+  },
+  {
+    "key": "australian-marine",
+    "file": "assets/images/australian-marine.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Australian marine engineers assemble electric propulsion equipment beside a ferry, an autonomous survey craft and a fish-inspired underwater robot.",
+    "sha256": "7099850032ea37e1bf964e8cc186edc04361c9ae23c396a29f72b75bcd4ed089",
+    "bytes": 348372,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-marine-original.png"
+  },
+  {
+    "key": "australian-health",
+    "file": "assets/images/australian-health.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced clinician mentors a younger colleague using a rehabilitation device with a patient in an Australian regional practice.",
+    "sha256": "94eda5d6f67f698b29295db2655e5891cc58df2f7990dfd7a2d182dc05d1d541",
+    "bytes": 182586,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-health-original.png"
+  },
+  {
+    "key": "australian-design",
+    "file": "assets/images/australian-design.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced Australian engineer guides younger designers using a physical building model, digital analysis and a mixed-reality headset.",
+    "sha256": "6895289aeb5809d02cd6433f5dba7c064079126aa90ce1c7ec5ca2169563d2ff",
+    "bytes": 248912,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-design-original.png"
+  },
+  {
+    "key": "australian-energy",
+    "file": "assets/images/australian-energy.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Australian electrical specialists share maintenance knowledge beside solar power, battery storage and monitoring equipment.",
+    "sha256": "eed40df00ef6e74d962a50fedb1e22a24bf4e5a4ab9de3a56595d92ce310922f",
+    "bytes": 285934,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-energy-original.png"
+  },
+  {
+    "key": "australian-water",
+    "file": "assets/images/australian-water.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced water-process specialist mentors younger technicians working with sensors at an Australian treatment plant.",
+    "sha256": "fd0304c45c19f503b76245752e08ab78462a34f120462a53384b6a0afdcd7736",
+    "bytes": 264340,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-water-original.png"
+  },
+  {
+    "key": "australian-robotics",
+    "file": "assets/images/australian-robotics.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Australian engineers manufacture a humanoid robot, a four-legged inspection robot and an autonomous wheeled vehicle.",
+    "sha256": "c613876214270be333800f2d624db544e1012c07ec22244b297c8228da5d8604",
+    "bytes": 277954,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-robotics-original.png"
+  },
+  {
+    "key": "australian-aviation",
+    "file": "assets/images/australian-aviation.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Engineers assemble an autonomous electric aircraft and a bird-inspired research drone in an Australian hangar.",
+    "sha256": "4b68f7b12c8bcdb5068b7bdefb13a5069fa006aa6371fc93b206d048c2909624",
+    "bytes": 216650,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-aviation-original.png"
+  },
+  {
+    "key": "australian-space",
+    "file": "assets/images/australian-space.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "Australian space engineers develop a lunar rover, a legged exploration robot and a small satellite in a testing facility.",
+    "sha256": "7aab7aec107ef096e37896d986e3ba68b7ee42f0ef57df7344f8d4e9a4ae2c81",
+    "bytes": 263628,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/australian-space-original.png"
   }
 ]

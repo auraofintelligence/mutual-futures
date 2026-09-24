@@ -5,7 +5,7 @@ PAGES.extend([{'slug': 'roadmap',
            'happens, share the results and decide what to try next. The dates below describe '
            'ambitions, not confirmed events.',
   'kicker': '15 / Development and evidence',
-  'image': 'roadmap',
+  'image': 'australian-building',
   'accent': 'gold',
   'type': 'roadmap',
   'sections': [{'title': 'Let results guide the next step',
@@ -34,8 +34,7 @@ PAGES.extend([{'slug': 'roadmap',
                         'records would include what it cost, what failed and what needed changing. '
                         'Each group would still make its own decisions and follow the reuse '
                         'licence.',
-                'refs': ['D09', 'P04', 'P05'],
-                'visual': 'civilisation-upgrade'}]},
+                'refs': ['D09', 'P04', 'P05']}]},
  {'slug': 'library',
   'label': 'Document library',
   'title': 'Read the background.<br>See how the ideas developed.',

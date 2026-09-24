@@ -42,9 +42,11 @@ PAGES.extend([{'slug': 'about',
                         'have their own terms.'},
                {'title': 'Who made this, and how to get in touch',
                 'text': 'Concepts, source materials and direction: Luke Nathan Hayes. Website '
-                        'developed with ChatGPT, September 2026. The hero illustrations come from '
-                        'related projects, with credits in the image record. The Mutual Futures '
-                        'favicon was newly generated with AI for this site.\n'
+                        'developed with ChatGPT, September 2026. Original AI-generated scenes show '
+                        'Australian business handovers and future technology manufacturing. They '
+                        'are concepts, not photographs of actual businesses or completed projects. '
+                        'Some other illustrations come from related projects. The favicon was '
+                        'also generated for Mutual Futures.\n'
                         '\n'
                         'For questions or corrections, email auraofintelligence@gmail.com. You can '
                         'also raise a public GitHub issue. Please keep private personal and '

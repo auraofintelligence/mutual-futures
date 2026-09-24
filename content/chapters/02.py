@@ -5,7 +5,7 @@ PAGES.extend([{'slug': 'capital',
            'repairs and improvements. Explore how a purchase might be funded and try the '
            'calculator with your own assumptions.',
   'kicker': '03 / Financial site',
-  'image': 'handover-ai',
+  'image': 'australian-logistics',
   'accent': 'gold',
   'tool': 'capital',
   'sections': [{'title': 'What needs funding?',
@@ -53,10 +53,10 @@ PAGES.extend([{'slug': 'capital',
  {'slug': 'workforce',
   'label': 'Work & life',
   'title': 'More skills.<br>More room for life.',
-  'intro': 'AI, robotics and extended reality (XR) could help people learn new work while established businesses '
-           'improve their capabilities. Try Everything Once explores supported moves between '
-           'roles; Intermittent Retirement explores planned periods for family, travel, learning '
-           'and rest.',
+  'intro': 'AI, robotics and extended reality (XR) could help people learn new work while '
+           'established businesses improve their capabilities. Try Everything Once explores '
+           'supported moves between roles; Intermittent Retirement explores planned periods for '
+           'family, travel, learning and rest.',
   'kicker': '04 / Human capability',
   'image': 'xr-learning',
   'accent': 'mint',

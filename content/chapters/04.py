@@ -5,7 +5,7 @@ PAGES.extend([{'slug': 'health',
            'This proposal explores shared services and separate research projects, with people '
            'choosing how they take part.',
   'kicker': '09 / Care, access and research',
-  'image': 'health',
+  'image': 'australian-health',
   'accent': 'mint',
   'sections': [{'title': 'Begin with everyday needs',
                 'text': 'The background proposals start with food, sleep, movement, cleaner '
@@ -57,7 +57,7 @@ PAGES.extend([{'slug': 'health',
            'difficult times. The wider ambition is to preserve those foundations, our knowledge '
            'and our choices for future generations.',
   'kicker': '10 / Continuity across scales',
-  'image': 'resilience',
+  'image': 'australian-water',
   'accent': 'gold',
   'sections': [{'title': 'Check what the evidence supports',
                 'text': 'Related research projects examine everyday disruptions, large-scale '
@@ -113,8 +113,7 @@ PAGES.extend([{'slug': 'health',
                         'responsibilities.',
                 'statement': 'Continuity includes repair, culture, knowledge and the freedom to '
                              'develop beyond the plan that preserved it.',
-                'refs': ['P10'],
-                'visual': 'civilisation-upgrade'}]},
+                'refs': ['P10']}]},
  {'slug': 'galactic',
   'label': 'The long-term future',
   'title': 'Start here on Earth.<br>Keep exploring.',
@@ -122,7 +121,7 @@ PAGES.extend([{'slug': 'health',
            'practical work today with future habitats, space exploration, science, art and play. '
            'The most distant ideas remain speculative.',
   'kicker': '11 / The long game',
-  'image': 'galactic',
+  'image': 'australian-space',
   'accent': 'violet',
   'sections': [{'title': 'What are the Kardashev galactic games?',
                 'text': "This is Luke's name for a long-term vision of learning, cooperation and "
@@ -132,6 +131,16 @@ PAGES.extend([{'slug': 'health',
                         'imagined future habitats. It is not an operating event or a promised '
                         'technology timetable.',
                 'refs': ['P10', 'P11']},
+               {'title': 'Build space capability in Australia',
+                'text': 'The manufacturing ambition extends to space: robotic rovers, satellite '
+                        'components, autonomous exploration vehicles and systems that help people '
+                        'work beyond Earth. Established engineering, electronics and materials '
+                        'businesses could contribute their knowledge as new teams develop and test '
+                        'specialised equipment.\n'
+                        '\n'
+                        'Robots could use wheels, walking legs or other forms suited to the '
+                        'terrain and task. The image imagines an Australian development facility; '
+                        'it does not represent an operating Mutual Futures space program.'},
                {'title': 'Build and test one stage at a time',
                 'text': 'The related Grain by Grain documentary project begins with a proposed '
                         'Dunwich gateway tunnel, then explores connected infrastructure, '
@@ -149,8 +158,7 @@ PAGES.extend([{'slug': 'health',
                          ('Outward exploration',
                           'Scientific networks, remote systems and future off-world '
                           'environments.')],
-                'refs': ['P10'],
-                'visual': 'civilisation-upgrade'},
+                'refs': ['P10']},
                {'title': 'Learn through making and playing',
                 'text': 'Workshops, shared projects and simulations could help people practise '
                         'skills, compare ideas and learn from setbacks. Taking part would be '
