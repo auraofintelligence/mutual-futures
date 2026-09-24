@@ -3,7 +3,7 @@ SITE = {
  'name':'Mutual Futures', 'owner':'Luke Nathan Hayes', 'date':'18 September 2026',
  'url':'https://auraofintelligence.github.io/mutual-futures/',
  'repo':'https://github.com/auraofintelligence/mutual-futures',
- 'description':'Generational business handovers and civilisation upgrades through shared ownership, AI, robotics and XR just-in-time learning. Explore the proposal, sources and tools.',
+ 'description':'Generational business handovers and civilisation upgrades through shared ownership, AI, robotics and extended reality (XR) just-in-time learning. Explore the proposal, sources and tools.',
  'topics':['mutual-wealth','business-succession','cooperatives','workforce-transition','try-everything-once','intermittent-retirement','universal-intelligence','adequate-income','sovereign-ai','digital-twins','legal-reflection','existential-resilience','civic-health','queensland','oceania','gajra-earth','aura-of-intelligence','kardashev','world-travel','github-pages']
 }
 def sec(title, text='', **kw): return dict(title=title,text=text,**kw)

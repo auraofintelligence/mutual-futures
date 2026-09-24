@@ -67,6 +67,6 @@ Strange But True Public Source Licence: non-commercial reuse with attribution; c
 
 ## Generational handover and technology upgrades
 
-The public narrative connects retiring owners' next chapters with younger generations learning from their knowledge while upgrading businesses through AI, robotics and XR just-in-time learning. Three new photorealistic concept visuals support that story. Their prompts and asset paths are in [generated-visuals.md](docs/generated-visuals.md).
+The public narrative connects retiring owners' next chapters with younger generations learning from their knowledge while upgrading businesses through AI, robotics and extended reality (XR) just-in-time learning. Three new photorealistic concept visuals support that story. Their prompts and asset paths are in [generated-visuals.md](docs/generated-visuals.md).
 
 Tool explanations now precede their controls. Defaults are explained using Real Pickles' reported 2013 community funding campaign, the Victorian teaching-service sabbatical scheme, the OAIC's fictionalised CarCover case and AEMO's report on South Australia's 2016 electricity outage. The general Australian-dollar acquisition-and-upgrade calculator starts blank because transaction assumptions require actual records and quotes.

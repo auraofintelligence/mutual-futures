@@ -53,7 +53,7 @@ PAGES.extend([{'slug': 'capital',
  {'slug': 'workforce',
   'label': 'Work & life',
   'title': 'More skills.<br>More room for life.',
-  'intro': 'AI, robotics and XR could help people learn new work while established businesses '
+  'intro': 'AI, robotics and extended reality (XR) could help people learn new work while established businesses '
            'improve their capabilities. Try Everything Once explores supported moves between '
            'roles; Intermittent Retirement explores planned periods for family, travel, learning '
            'and rest.',
@@ -81,7 +81,7 @@ PAGES.extend([{'slug': 'capital',
                            'href': None}],
                 'refs': ['P03', 'D01']},
                {'title': 'Learn at the point of work',
-                'text': 'XR means extended reality, including augmented and mixed reality. A '
+                'text': 'Extended reality (XR) includes virtual, augmented and mixed reality. A '
                         'worker could see instructions beside the actual equipment, practise a '
                         'procedure in a simulation, or bring a remote specialist into the task. AI '
                         "could help find the right guidance for the job and the person's "

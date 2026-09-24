@@ -3,7 +3,7 @@ PAGES.extend([{'slug': 'index',
   'title': 'Pass on the knowledge.<br>Upgrade the future.',
   'intro': 'As established business owners retire and change chapters, younger generations can '
            'learn from what they know and take those businesses further. Mutual Futures proposes '
-           'shared ownership, AI, robotics and XR just-in-time learning as a path from business '
+           'shared ownership, AI, robotics and extended reality (XR) just-in-time learning as a path from business '
            'handovers to wider civilisation upgrades.',
   'kicker': 'Mutual Futures / a Strange but True site',
   'image': 'civilisation-upgrade',
@@ -15,7 +15,7 @@ PAGES.extend([{'slug': 'index',
                         'sale and a paid, agreed handover could support their next chapter while '
                         'giving younger generations access to that knowledge.\n'
                         '\n'
-                        'The new owners and staff could then combine it with AI, robotics and XR '
+                        'The new owners and staff could then combine it with AI, robotics and extended reality (XR) '
                         'learning to improve production, services and working life. Shared '
                         'ownership would connect the resulting value with the people building that '
                         'next stage.',
@@ -36,9 +36,9 @@ PAGES.extend([{'slug': 'index',
                                    'can help. Plan installation, training, maintenance and safe '
                                    'working arrangements.',
                            'href': None},
-                          {'title': 'XR just-in-time learning',
-                           'text': 'Show task instructions, equipment information and remote '
-                                   'expert guidance when and where someone needs them. Practise '
+                          {'title': 'Extended reality for learning',
+                           'text': 'Extended reality combines virtual, augmented and mixed reality. '
+                                   'It can show digital guidance beside real equipment or provide a simulation to practise in. Learn '
                                    'before taking on unfamiliar responsibilities.',
                            'href': None}],
                 'visual': 'xr-learning'},
@@ -99,7 +99,7 @@ PAGES.extend([{'slug': 'index',
   'label': 'Business succession',
   'title': 'A fair exit.<br>A shared beginning.',
   'intro': 'A retiring owner gains a fair exit and room for their next chapter. Younger '
-           'generations learn from the knowledge built over a lifetime, while AI, robotics and XR '
+           'generations learn from the knowledge built over a lifetime, while AI, robotics and extended reality (XR) '
            'help them advance the business and share in its future.',
   'kicker': '01 / Productive continuity',
   'image': 'handover-ai',
@@ -170,9 +170,9 @@ PAGES.extend([{'slug': 'index',
                                    'can help. Plan installation, training, maintenance and safe '
                                    'working arrangements.',
                            'href': None},
-                          {'title': 'XR just-in-time learning',
-                           'text': 'Show task instructions, equipment information and remote '
-                                   'expert guidance when and where someone needs them. Practise '
+                          {'title': 'Extended reality for learning',
+                           'text': 'Extended reality combines virtual, augmented and mixed reality. '
+                                   'It can show digital guidance beside real equipment or provide a simulation to practise in. Learn '
                                    'before taking on unfamiliar responsibilities.',
                            'href': None}],
                 'visual': 'xr-learning'},
