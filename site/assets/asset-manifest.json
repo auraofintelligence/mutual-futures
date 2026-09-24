@@ -231,14 +231,60 @@
     "credit": "Reused source-project concept artwork; source collaborators retain their credits. Not an image of a completed Mutual Futures project."
   },
   {
-    "key": "favicon",
-    "file": "assets/images/favicon.png",
-    "source": "https://raw.githubusercontent.com/auraofintelligence/gajra-earth-claude-build/HEAD/assets/aura-heart-192.png",
-    "source_repo": "https://github.com/auraofintelligence/gajra-earth-claude-build",
-    "source_path": "assets/aura-heart-192.png",
-    "alt": "GAJRA Earth source-project raster favicon",
-    "sha256": "628519b04dbb607bcdaff01838364c5818c8983fa63cae3cfd0ff88eb45bfbfa",
-    "bytes": 24012,
-    "credit": "Reused source-project concept artwork; source collaborators retain their credits. Not an image of a completed Mutual Futures project."
+    "key": "mutual-futures-original",
+    "file": "assets/images/mutual-futures-original.png",
+    "source": "Original AI-generated artwork for Mutual Futures, 18 September 2026",
+    "alt": "Gold and teal curved forms sharing an open centre",
+    "sha256": "8c498ce305f5d4350e1c8ba2b400aac4c143fa1815ef110a2d19bc595bc1dcdf",
+    "bytes": 930434,
+    "credit": "Generated with the built-in OpenAI image generation tool for this project. Prompt and production notes: docs/favicon-generation.md."
+  },
+  {
+    "key": "mutual-futures-icon-192",
+    "file": "assets/images/mutual-futures-icon-192.png",
+    "source": "Original AI-generated artwork for Mutual Futures, 18 September 2026",
+    "alt": "Gold and teal curved forms sharing an open centre",
+    "sha256": "78626c6a7462c130dd9b94dc3f4de7ee9d664a626c30c34ee9113778f14a3086",
+    "bytes": 38783,
+    "credit": "Generated with the built-in OpenAI image generation tool for this project. Prompt and production notes: docs/favicon-generation.md."
+  },
+  {
+    "key": "mutual-futures-icon-32",
+    "file": "assets/images/mutual-futures-icon-32.png",
+    "source": "Original AI-generated artwork for Mutual Futures, 18 September 2026",
+    "alt": "Gold and teal curved forms sharing an open centre",
+    "sha256": "d69c26dd9f7bf2eb37fc74ea6c8ed9724ca82dd1f3d985144b04cf07ddfce3a7",
+    "bytes": 2210,
+    "credit": "Generated with the built-in OpenAI image generation tool for this project. Prompt and production notes: docs/favicon-generation.md."
+  },
+  {
+    "key": "handover-ai",
+    "file": "assets/images/handover-ai.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced owner shares production knowledge with younger colleagues beside an automated manufacturing line.",
+    "sha256": "ff5a49c7f50d98e983700a082c239f45d59edd7633ceeb5a9f5dcf0293ae6607",
+    "bytes": 282916,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/handover-ai-original.png"
+  },
+  {
+    "key": "xr-learning",
+    "file": "assets/images/xr-learning.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "An experienced engineer mentors younger workers using mixed-reality guidance beside a robotic production cell.",
+    "sha256": "ab5424e37aeb09bd5cbd4218db08b36ef1c05f4de8443be68e0330634302f0a8",
+    "bytes": 229398,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/xr-learning-original.png"
+  },
+  {
+    "key": "civilisation-upgrade",
+    "file": "assets/images/civilisation-upgrade.webp",
+    "source": "Built-in OpenAI image generation, 24 September 2026",
+    "alt": "A future coastal city connects automated production, transport, research and everyday places to live.",
+    "sha256": "021b1026d9a51a286d10f378b28dea8072e60e03d683dd624e95e39edc57ea61",
+    "bytes": 555500,
+    "credit": "Original AI-generated concept image for Mutual Futures; not a real project photograph. Prompt: docs/generated-visuals.md",
+    "original": "assets/images/civilisation-upgrade-original.png"
   }
 ]

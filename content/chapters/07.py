@@ -1,10 +1,72 @@
-PAGES.extend([
- dict(slug='about',label='About this workbench',title='Mutual Futures.<br><em>A wider field of choice.</em>',intro='A standalone public project by Luke Nathan Hayes / Strange But True / Aura of Intelligence, developed from Minjerribah and South East Queensland with an outward-looking horizon.',kicker='18 / About and use',image='about',accent='violet',type='about',sections=[
- sec('The proposition in full.','Mutual Futures explores voluntary succession of existing staffed businesses into mutual wealth, while preserving customer relationships and upgrading practical capability. It connects that productive base with Try Everything Once, Intermittent Retirement, universal intelligence and universal adequate income; a personal Aura and permissions layer; legal reflection and radical overcompliance; simulations of social and operational dependencies; civic health and research; existential resilience; sovereign cooperation across Oceania and Native Nations; world travel, culture and Kardashev galactic games.\n\nThe aim described by Luke is not only to own businesses or preserve jobs. It is to develop shared productive assets and human capability while widening the lives people can choose and helping humanity continue through major threats. This public workbench makes the relationships, tools, sources and open questions inspectable. It does not claim to speak for a government, community, First Nation, investor, medical institution or future participant.'),
- sec('Project status.',"This website is a public prototype and synthesis of Luke's project material, not a registered mutual, investment product, acquisition offer, clinical service, legal practice or government programme. The interactive tools run in the browser. They do not connect to an AI model, bank, payroll, identity provider, live sensor network or migration authority. The source shelf distinguishes what is published from what remains proposed."),
- sec('A personal project with optional connections.',"Public projects can express different facets of Luke's own Aura without claiming that his preferred future is everyone's. People may explore one room, adapt a useful pattern under the licence, disagree with the framing, or leave. Shared benefits, employment and access are not conditional on political agreement.",refs=['P02','P03','P06','P07']),
- sec('Data, local tools and publication.','The website has no account system, advertising, analytics, payment form or tracking script. Drafts remain in memory until a visitor chooses to save them in this browser or download them. Browser storage is not encryption. The site host receives normal web requests. External links open a new tab and their services have their own terms. An export belongs to its author, who chooses where to share it.'),
- sec('Credits and contact.','Concepts, source materials and project direction: Luke Nathan Hayes. This Mutual Futures website implementation: Luke Nathan Hayes with ChatGPT, September 2026. Reused illustrations are credited in the asset manifest and linked back to their source projects. Existing projects keep their original collaborator credits. No font files or SVG assets are bundled.\n\nPublic enquiries and correction suggestions: auraofintelligence@gmail.com. GitHub issues can also carry corrections, but a public issue is not a place for private business, health or identity records.')]),
- dict(slug='site-map',label='Site map',title='Every room.<br><em>Your own route.</em>',intro='The whole workbench, without a sign-up path or a prescribed order. Each chapter has its own page and a route to the next.',kicker='19 / Navigation',image='sitemap',accent='mint',type='sitemap',sections=[]),
- dict(slug='licence',label='Licence',title='Public to explore.<br><em>Rights kept clear.</em>',intro='Strange But True Public Source Licence. Non-commercial exploration with attribution, and separate written permission for commercial and institutional use.',kicker='20 / Licence',image='licence',accent='gold',type='licence',sections=[])
-])
+PAGES.extend([{'slug': 'about',
+  'label': 'About Mutual Futures',
+  'title': 'About<br>Mutual Futures.',
+  'intro': 'Mutual Futures is a proposal by Luke Nathan Hayes, based on Minjerribah in South East '
+           'Queensland. It explores how shared businesses, useful technology and learning could '
+           'give people more choice in their lives.',
+  'kicker': '18 / About and use',
+  'image': 'about',
+  'accent': 'violet',
+  'type': 'about',
+  'sections': [{'title': 'The idea in everyday terms',
+                'text': 'When a business owner retires, a good business can lose valuable skills '
+                        'and relationships. Mutual Futures asks whether shared ownership could '
+                        'help keep those businesses going and spread the benefits more widely.\n'
+                        '\n'
+                        'The next question is what those benefits could make possible: paid '
+                        'learning, reliable incomes, useful personal AI, better services and time '
+                        'for family, care, travel and rest. The longer-term ideas extend to public '
+                        'decision-making, communities working together and preparation for major '
+                        'disruptions.\n'
+                        '\n'
+                        'Luke Nathan Hayes developed the proposal through the related projects and '
+                        'papers linked on this site. Readers are welcome to explore a useful part, '
+                        'question it or disagree. No community, government or outside organisation '
+                        'is represented by the proposal.'},
+               {'title': 'What exists today',
+                'text': 'This website, its reading guides and four simple browser tools are '
+                        'available now. The proposed mutual business network has not been '
+                        'established here. The tools use your inputs or clearly labelled examples; '
+                        'they are not connected to banks, employers, health services or live '
+                        'public systems.'},
+               {'title': 'Choose what interests you',
+                'text': 'You do not need to agree with the whole proposal to explore one part of '
+                        'it. The intended benefits of shared businesses would not depend on '
+                        'political agreement. Reuse is subject to the licence linked below.',
+                'refs': ['P02', 'P03', 'P06', 'P07']},
+               {'title': 'Your information on this site',
+                'text': 'There are no accounts, payment forms, advertising or analytics scripts. '
+                        'Tool entries stay in the page unless you choose to save them in your '
+                        'browser or download a copy. A saved browser copy is not encrypted. The '
+                        'host receives normal requests to load the website, and linked services '
+                        'have their own terms.'},
+               {'title': 'Who made this, and how to get in touch',
+                'text': 'Concepts, source materials and direction: Luke Nathan Hayes. Website '
+                        'developed with ChatGPT, September 2026. The hero illustrations come from '
+                        'related projects, with credits in the image record. The Mutual Futures '
+                        'favicon was newly generated with AI for this site.\n'
+                        '\n'
+                        'For questions or corrections, email auraofintelligence@gmail.com. You can '
+                        'also raise a public GitHub issue. Please keep private personal and '
+                        'business information out of public issues.'}]},
+ {'slug': 'site-map',
+  'label': 'Site map',
+  'title': 'Explore<br>Mutual Futures.',
+  'intro': 'Choose a topic that interests you. Each page explains one part of the idea, with links '
+           'to related topics and sources.',
+  'kicker': '19 / Navigation',
+  'image': 'sitemap',
+  'accent': 'mint',
+  'type': 'sitemap',
+  'sections': []},
+ {'slug': 'licence',
+  'label': 'Licence',
+  'title': 'Using and sharing<br>this work.',
+  'intro': 'You can reuse this work for non-commercial purposes under the Strange But True Public '
+           'Source Licence, with credit to its authors. Commercial and institutional uses require '
+           'separate written permission.',
+  'kicker': '20 / Licence',
+  'image': 'licence',
+  'accent': 'gold',
+  'type': 'licence',
+  'sections': []}])

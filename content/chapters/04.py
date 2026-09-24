@@ -1,17 +1,180 @@
-PAGES.extend([
- dict(slug='health',label='Health & care',title='Health to live.<br><em>Time to enjoy it.</em>',intro='The health surge belongs to a wider life, not a requirement that people optimise themselves for an employer, a civic platform or an AI system.',kicker='09 / Care, access and research',image='health',accent='mint',sections=[
- sec('Ordinary care and research are related, not interchangeable.',"Luke's later Vuvale submission begins civic health with food, sleep, movement, cleaner environments, accessible information and individual control of health data. It separately describes research into shared preventive and restorative facilities, including sauna, regulated hyperbaric oxygen therapy and the Aura Geode development path.",cards=[card('Access and everyday support','Care, understandable information, appropriate services and working arrangements that leave room for life.'),card('Shared facilities','Ownership, staffing, utilisation, safety, upkeep and access arrangements examined as part of an actual service.'),card('Research pathways','Device engineering, clinical questions, ethics, evidence, professional responsibilities and independent review.')],refs=['D05','D09']),
- sec('The Aura Geode is a development path.','The proposal connects an engineering concept, shared ownership, personal digital-twin research and possible health applications. This site does not provide a treatment protocol, claim an approved device exists or infer a guaranteed outcome from an early study. The older surge papers remain identifiable as their own working documents rather than silently becoming clinical evidence.',refs=['D01','D05','S10','S11']),
- sec('A separate financial case.','A member service may have income and costs. A research project may have research funding. A hoped-for reduction in future healthcare spending is a different claim. The later source framing keeps health savings outside the base financial case until research demonstrates them; it does not use an assumed medical transformation to justify acquisition debt.',statement='Health access is a purpose. An unverified health saving is not cash in the bank.',refs=['D05']),
- sec('Earn-to-Heal within the reciprocity proposal.','The source papers explore community-chosen wellbeing access in recognition of verified voluntary contribution. One C-Hour is a contribution receipt in the later framing, not a market wage or exchange rate. Consent to a study, eligibility for healthcare, employment and civic participation remain separate decisions.',refs=['D05','D09'])]),
- dict(slug='resilience',label='Existential resilience',title='Keep life possible.<br><em>Keep choices open.</em>',intro='The ambition includes helping humanity survive existential threats. The practical question is which capabilities support ordinary life, withstand disruption and preserve the ability to recover.',kicker='10 / Continuity across scales',image='resilience',accent='gold',sections=[
- sec('One field of inquiry, different kinds of evidence.',"Grain by Grain spans everyday disruption, global and cosmic risks, frontier research, and imaginative stress tests. Micronova and Excursions distinguishes observations, modelling, disputed mechanisms and cadence claims. These are the projects' research frames, not a verified forecast that one specific catastrophe is imminent.",cards=[card('Observed and operational','Records and services that can be checked against their primary sources.'),card('Modelled and contested','Explicit assumptions, competing explanations and tests that might change an assessment.'),card('Exploratory horizons','Long-term designs and imaginative scenarios labelled so they do not impersonate observations.')],refs=['P10','P11','S12','S13']),
- sec('Common preparations, multiple possible causes.','The Micronova and Excursions build page organises preparation around shared consequences rather than requiring agreement on every threat mechanism.',table={'headers':['Capability','Question carried into the business network'],'rows':[['Energy that can operate independently','What essential work continues when an external supply fails?'],['Water held, treated and cycled','What storage, treatment, power and expertise does continuity require?'],['Food and repair','What can be produced, stored, maintained and repaired locally?'],['Knowledge that stays','What records, methods and skills remain usable without the network?'],['Protective shelter','Which actual conditions is the structure designed and validated to withstand?'],['People who already know one another','Who has practised the relationships and handovers before a disruption?']]},refs=['P11']),
- sec('Distributed capability can still share a failure.','A network spread across many places may depend on one software update, supplier, financier or communications service. The proposed architecture therefore asks about failure isolation and substitutes as well as geographic distribution. Adding a backup in a diagram is different from demonstrating that it works.',refs=['D03','D04']),
- sec('The succession connection.','Acquired and participating businesses could preserve machine tools, trades, food logistics, health capability and operating knowledge. Upgrading could make some of that capability more robust. These purposes would be explicitly funded and agreed, not used to justify unlimited obligations on employees.',statement='Continuity includes repair, culture, knowledge and the freedom to develop beyond the plan that preserved it.',refs=['P10'])]),
- dict(slug='galactic',label='Kardashev galactic games',title='Civilisation as a beginning.<br><em>Not a finishing line.</em>',intro="Kardashev galactic games is Luke's expansive horizon: humanity developing the capability to explore, cooperate, create and continue beyond today's planetary limits.",kicker='11 / The long game',image='galactic',accent='violet',sections=[
- sec('Not merely space-themed retraining.',"The horizon includes actual scientific, material, energy, habitat and interplanetary capability, extending in imagination towards stellar and galactic scales. Nearer-term simulations, workshops and shared projects provide ways to begin learning. The phrase describes Luke's project horizon, not an operating galactic event or a schedule of assured technological milestones.",refs=['P10','P11']),
- sec('A capability path rather than one giant leap.','The documentary planning project begins with a proposed Dunwich gateway tunnel and useful material streams, moves through service corridors and subterranean industry, and holds a 20-million-person worldship as a long-horizon concept. Each stage is a proposal with its own engineering, environmental, cultural, financial and public questions. No excavation, settlement approval or completed worldship is claimed here.',flow=[('Useful local systems','Food, repair, communications and learning.'),('Connected infrastructure','Transport, materials, energy and protected services.'),('Long-lived habitats','Life-support, maintenance, culture and knowledge across generations.'),('Outward exploration','Scientific networks, remote systems and future off-world environments.')],refs=['P10']),
- sec('Make learning playable without making suffering a game.',"Grain by Grain's playbook offers participants, resources, branching skills, rehearsals and ways to preserve progress through setbacks. It distinguishes preparation from trauma and keeps participation voluntary. A simulated habitat, a tested component and an operating habitat are different accomplishments.",cards=[card('Explore','Enter a model, ask a question, compare assumptions and imagine possibilities.'),card('Develop','Build competence, validate a component or preserve knowledge another group can use.'),card('Connect','Share agreed learning, relationships and useful capabilities without imposing one path.')],refs=['P10']),
- sec('Survival in service of a life worth living.',"A long-lived civilisation would also carry music, art, relationships, nature, play and unstructured time. The purpose is not permanent emergency discipline. Joyful Responsible Abundance is Luke's organising question for what increasing capability is for, with room for different answers.",statement='The games can widen the horizon. The person keeps the choice of whether, where and how to play.',refs=['P06','P07','P10'])])
-])
+PAGES.extend([{'slug': 'health',
+  'label': 'Health & care',
+  'title': 'Better access to care.<br>More time to live well.',
+  'intro': 'Good food, rest, care and a healthy environment belong in any plan for a better life. '
+           'This proposal explores shared services and separate research projects, with people '
+           'choosing how they take part.',
+  'kicker': '09 / Care, access and research',
+  'image': 'health',
+  'accent': 'mint',
+  'sections': [{'title': 'Begin with everyday needs',
+                'text': 'The background proposals start with food, sleep, movement, cleaner '
+                        'surroundings, understandable information and control over personal health '
+                        'records. They also explore shared wellbeing facilities and separate '
+                        'medical research. Each proposed service would need its own evidence, '
+                        'staffing and operating plan.',
+                'cards': [{'title': 'Access and everyday support',
+                           'text': 'Care, understandable information, appropriate services and '
+                                   'working arrangements that leave room for life.',
+                           'href': None},
+                          {'title': 'Shared facilities',
+                           'text': 'Ownership, staffing, utilisation, safety, upkeep and access '
+                                   'arrangements examined as part of an actual service.',
+                           'href': None},
+                          {'title': 'Research pathways',
+                           'text': 'Device engineering, clinical questions, ethics, evidence, '
+                                   'professional responsibilities and independent review.',
+                           'href': None}],
+                'refs': ['D05', 'D09']},
+               {'title': 'What is the Aura Geode?',
+                'text': 'The Aura Geode is an early engineering and research concept linked to '
+                        'personal digital models and possible health applications. It is not '
+                        'presented here as an approved medical device or a proven treatment. The '
+                        'background papers describe ideas to investigate; they do not establish '
+                        'clinical benefits.',
+                'refs': ['D01', 'D05', 'S10', 'S11']},
+               {'title': 'Budget for care and research honestly',
+                'text': 'A care service has operating costs. Research needs its own funding. '
+                        "Possible future savings in healthcare cannot pay today's bills unless "
+                        'they are actually demonstrated and available. The later papers therefore '
+                        'keep hoped-for health savings out of the basic business purchase '
+                        'calculations.',
+                'statement': 'Health access is a purpose. An unverified health saving is not cash '
+                             'in the bank.',
+                'refs': ['D05']},
+               {'title': 'Volunteering and access to wellbeing activities',
+                'text': 'Some source papers call this idea Earn-to-Heal: communities could '
+                        'recognise voluntary contributions through access to chosen wellbeing '
+                        'activities. In the later papers, a C-Hour records an hour of '
+                        'volunteering, with no dollar conversion. Healthcare eligibility, paid '
+                        'employment and consent to research would each need their own '
+                        'arrangements.',
+                'refs': ['D05', 'D09']}]},
+ {'slug': 'resilience',
+  'label': 'Preparing for disruption',
+  'title': 'Keep life going.<br>Prepare for disruption.',
+  'intro': 'Reliable water, energy, food, shelter and practical skills help communities through '
+           'difficult times. The wider ambition is to preserve those foundations, our knowledge '
+           'and our choices for future generations.',
+  'kicker': '10 / Continuity across scales',
+  'image': 'resilience',
+  'accent': 'gold',
+  'sections': [{'title': 'Check what the evidence supports',
+                'text': 'Related research projects examine everyday disruptions, large-scale '
+                        'hazards and more speculative possibilities. Observations, models and '
+                        'disputed explanations need to be clearly labelled. Their inclusion here '
+                        'does not mean a particular disaster has been predicted.',
+                'cards': [{'title': 'Observed and operational',
+                           'text': 'Records and services that can be checked against their primary '
+                                   'sources.',
+                           'href': None},
+                          {'title': 'Modelled and contested',
+                           'text': 'Explicit assumptions, competing explanations and tests that '
+                                   'might change an assessment.',
+                           'href': None},
+                          {'title': 'Exploratory horizons',
+                           'text': 'Long-term designs and imaginative scenarios labelled so they '
+                                   'do not impersonate observations.',
+                           'href': None}],
+                'refs': ['P10', 'P11', 'S12', 'S13']},
+               {'title': 'Prepare for needs that many disruptions share',
+                'text': 'Different events can interrupt the same essentials. Water storage, repair '
+                        'skills, reliable communications and backup power can be worth examining '
+                        'without agreeing on every possible cause. Real plans need to be checked '
+                        'against local conditions.',
+                'table': {'headers': ['Capability', 'Question carried into the business network'],
+                          'rows': [['Energy that can operate independently',
+                                    'What essential work continues when an external supply fails?'],
+                                   ['Water held, treated and cycled',
+                                    'What storage, treatment, power and expertise does continuity '
+                                    'require?'],
+                                   ['Food and repair',
+                                    'What can be produced, stored, maintained and repaired '
+                                    'locally?'],
+                                   ['Knowledge that stays',
+                                    'What records, methods and skills remain usable without the '
+                                    'network?'],
+                                   ['Protective shelter',
+                                    'Which actual conditions is the structure designed and '
+                                    'validated to withstand?'],
+                                   ['People who already know one another',
+                                    'Who has practised the relationships and handovers before a '
+                                    'disruption?']]},
+                'refs': ['P11']},
+               {'title': 'Check what the backups depend on',
+                'text': 'Businesses in different towns might still rely on the same software, '
+                        'supplier or communications network. A backup plan should examine those '
+                        'shared dependencies and test whether an alternative really works.',
+                'refs': ['D03', 'D04']},
+               {'title': 'Keep useful skills and equipment in the community',
+                'text': 'A business handover could preserve trades, tools, food supply connections '
+                        'and practical knowledge. Improvements could also help the business cope '
+                        'with disruption. Any extra work would need an agreed budget and '
+                        'responsibilities.',
+                'statement': 'Continuity includes repair, culture, knowledge and the freedom to '
+                             'develop beyond the plan that preserved it.',
+                'refs': ['P10'],
+                'visual': 'civilisation-upgrade'}]},
+ {'slug': 'galactic',
+  'label': 'The long-term future',
+  'title': 'Start here on Earth.<br>Keep exploring.',
+  'intro': 'What could humanity build over many generations? This long-term vision connects '
+           'practical work today with future habitats, space exploration, science, art and play. '
+           'The most distant ideas remain speculative.',
+  'kicker': '11 / The long game',
+  'image': 'galactic',
+  'accent': 'violet',
+  'sections': [{'title': 'What are the Kardashev galactic games?',
+                'text': "This is Luke's name for a long-term vision of learning, cooperation and "
+                        'exploration at planetary and eventually wider scales. Kardashev refers to '
+                        'a way of thinking about civilisations by the scale of energy they can '
+                        'use. Here, the phrase connects practical projects, simulations and '
+                        'imagined future habitats. It is not an operating event or a promised '
+                        'technology timetable.',
+                'refs': ['P10', 'P11']},
+               {'title': 'Build and test one stage at a time',
+                'text': 'The related Grain by Grain documentary project begins with a proposed '
+                        'Dunwich gateway tunnel, then explores connected infrastructure, '
+                        'underground industry and much more distant habitat ideas. One speculative '
+                        'concept is a worldship for 20 million people.\n'
+                        '\n'
+                        'These ideas are at very different stages. Each would need its own '
+                        'engineering, environmental, cultural, financial and public assessment. '
+                        'The site does not claim construction approval or a completed habitat.',
+                'flow': [('Useful local systems', 'Food, repair, communications and learning.'),
+                         ('Connected infrastructure',
+                          'Transport, materials, energy and protected services.'),
+                         ('Long-lived habitats',
+                          'Life-support, maintenance, culture and knowledge across generations.'),
+                         ('Outward exploration',
+                          'Scientific networks, remote systems and future off-world '
+                          'environments.')],
+                'refs': ['P10'],
+                'visual': 'civilisation-upgrade'},
+               {'title': 'Learn through making and playing',
+                'text': 'Workshops, shared projects and simulations could help people practise '
+                        'skills, compare ideas and learn from setbacks. Taking part would be '
+                        'voluntary. A successful simulation would still need to be followed by '
+                        'testing before anyone relied on a real system.',
+                'cards': [{'title': 'Explore',
+                           'text': 'Enter a model, ask a question, compare assumptions and imagine '
+                                   'possibilities.',
+                           'href': None},
+                          {'title': 'Develop',
+                           'text': 'Build competence, validate a component or preserve knowledge '
+                                   'another group can use.',
+                           'href': None},
+                          {'title': 'Connect',
+                           'text': 'Share agreed learning, relationships and useful capabilities '
+                                   'without imposing one path.',
+                           'href': None}],
+                'refs': ['P10']},
+               {'title': 'Keep the purpose human',
+                'text': 'A future worth working towards would include relationships, nature, '
+                        'music, art, curiosity and time to enjoy life. The phrase Joyful '
+                        'Responsible Abundance asks how growing knowledge and capability could '
+                        'support those things. People would remain free to choose different '
+                        'answers.',
+                'statement': 'The games can widen the horizon. The person keeps the choice of '
+                             'whether, where and how to play.',
+                'refs': ['P06', 'P07', 'P10']}]}])

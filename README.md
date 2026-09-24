@@ -1,8 +1,8 @@
 # Mutual Futures
 
-**From business succession to mutual wealth, universal intelligence and more possible lives.**
+**Pass on the knowledge. Upgrade the future.**
 
-A standalone public workbench by Luke Nathan Hayes / Strange But True / Aura of Intelligence. It connects voluntary succession of existing staffed businesses with member ownership, upgrading, Try Everything Once, Intermittent Retirement, universal intelligence and universal adequate income, legal reflection and radical overcompliance, civic health research, existential resilience, world travel and Kardashev galactic games.
+A public proposal by Luke Nathan Hayes. It explores how businesses could continue under shared ownership when their owners retire, and how shared resources could support learning, useful AI, reliable incomes and more choice in life. The wider pages explore care, public decision-making, community resilience, travel and long-term possibilities.
 
 **Repository:** https://github.com/auraofintelligence/mutual-futures
 
@@ -10,7 +10,9 @@ A standalone public workbench by Luke Nathan Hayes / Strange But True / Aura of 
 
 ## Build and publishing status
 
-The complete static website is committed in [`site/`](site/). GitHub Actions successfully generated and checked the site on 18 September 2026. It contains 21 chapter and utility pages plus a custom 404, four browser-local tools, ten source reading guides, fourteen project connections and fifteen external source records. See [`site/build-report.md`](site/build-report.md) and the [checked build run](https://github.com/auraofintelligence/mutual-futures/actions/runs/35311007789).
+The readability update uses one font family and four text roles, with an 18px minimum for body text, navigation, labels, sources and tool controls. Hero artwork is shown at full opacity without a dark overlay, above a separate text area. The favicon is original AI-generated artwork created for Mutual Futures; its prompt and files are recorded in [favicon-generation.md](docs/favicon-generation.md). Build files use explicit UTF-8 and LF line endings for consistent Windows and GitHub output.
+
+The complete static website is committed in [`site/`](site/). GitHub Actions successfully generated and checked the site on 18 September 2026. It contains 21 chapter and utility pages plus a custom 404, four browser-local tool pages, ten source reading guides, fourteen project connections and fifteen external source records. See [`site/build-report.md`](site/build-report.md) and the [checked build run](https://github.com/auraofintelligence/mutual-futures/actions/runs/35311007789).
 
 **The public site is live and verified.** The HTTP check confirmed all 21 chapter and utility pages, the shared stylesheet and script, the favicon and the source-library downloads. See [live-check.json](docs/live-check.json) for the date and individual requests. The build supports either GitHub Actions or main / (root) publishing.
 
@@ -18,7 +20,7 @@ No Notion, Google Drive or other staging service is needed by the website or its
 
 ## What is included
 
-- Multi-page, responsive HTML with purple, teal and gold styling, raster illustrations and a PNG favicon.
+- Multi-page, responsive HTML with a neutral light theme, consistent typography, original photorealistic AI concept visuals and an original PNG favicon.
 - A searchable site index, previous/next chapter navigation, back-to-top controls, keyboard access and reduced-motion support.
 - Browser-local tools for capital allocation, work-and-life planning, permissions and dependency scenarios. These are exploratory tools, not financial forecasts or a complete simulation of society.
 - A source library with ten reading guides, original-document metadata and checksums. **The unchanged PDF/DOCX originals are not yet present in this repository.** Reading guides are not labelled as original documents.
@@ -62,3 +64,9 @@ Suggested topics:
 Concept, direction and source family: Luke Nathan Hayes / Strange But True / Aura of Intelligence. This implementation was prepared with ChatGPT. Earlier projects retain their original collaborator credits.
 
 Strange But True Public Source Licence: non-commercial reuse with attribution; commercial, corporate, institutional and government uses require separate written permission. This is public-source work, not an unrestricted open-source licence.
+
+## Generational handover and technology upgrades
+
+The public narrative connects retiring owners' next chapters with younger generations learning from their knowledge while upgrading businesses through AI, robotics and XR just-in-time learning. Three new photorealistic concept visuals support that story. Their prompts and asset paths are in [generated-visuals.md](docs/generated-visuals.md).
+
+Tool explanations now precede their controls. Defaults are explained using Real Pickles' reported 2013 community funding campaign, the Victorian teaching-service sabbatical scheme, the OAIC's fictionalised CarCover case and AEMO's report on South Australia's 2016 electricity outage. The general Australian-dollar acquisition-and-upgrade calculator starts blank because transaction assumptions require actual records and quotes.

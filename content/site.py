@@ -3,7 +3,7 @@ SITE = {
  'name':'Mutual Futures', 'owner':'Luke Nathan Hayes', 'date':'18 September 2026',
  'url':'https://auraofintelligence.github.io/mutual-futures/',
  'repo':'https://github.com/auraofintelligence/mutual-futures',
- 'description':'A public workbench connecting retiring-owner business succession to mutual wealth, Try Everything Once, Intermittent Retirement, universal intelligence and adequate income, legal reflection, civic health research, existential resilience, world travel and Kardashev galactic games.',
+ 'description':'Generational business handovers and civilisation upgrades through shared ownership, AI, robotics and XR just-in-time learning. Explore the proposal, sources and tools.',
  'topics':['mutual-wealth','business-succession','cooperatives','workforce-transition','try-everything-once','intermittent-retirement','universal-intelligence','adequate-income','sovereign-ai','digital-twins','legal-reflection','existential-resilience','civic-health','queensland','oceania','gajra-earth','aura-of-intelligence','kardashev','world-travel','github-pages']
 }
 def sec(title, text='', **kw): return dict(title=title,text=text,**kw)
@@ -45,7 +45,7 @@ SOURCES = [
 PAGES = []
 from pathlib import Path
 for chapter_file in sorted((Path(__file__).parent / "chapters").glob("*.py")):
- exec(compile(chapter_file.read_text(), str(chapter_file), "exec"), globals())
+ exec(compile(chapter_file.read_text(encoding='utf-8'), str(chapter_file), "exec"), globals())
 
 TIMELINE = [('2026','The public workbench','Publish the architecture, source shelf and bounded tools. Establish a verified view of potential participating businesses rather than rely on exploratory marketplace counts.','Current website; proposed operating work'),
 ('Next operating stage','An actual succession and upgrade','A negotiated acquisition or partnership, with funding, management, employee arrangements, permitted data and a measurable transition plan. No transaction is announced here.','Proposed; no fixed date'),

@@ -1,11 +1,100 @@
-PAGES.extend([
- dict(slug='roadmap',label='Development horizons',title='A sequence to examine.<br><em>Room to change.</em>',intro='The architecture reaches from an operating business to long-lived civilisation. Its milestones distinguish present work, proposed next steps and horizons dependent on choices not yet made.',kicker='15 / Development and evidence',image='roadmap',accent='gold',type='roadmap',sections=[
- sec('Evidence at each scale.','The programme is not made complete by naming a date. A proposed stage would record its scope, resources, decisions, evidence and reasons to continue, change direction or stop. No business acquisition, institutional endorsement or universal entitlement is announced by this website.'),
- sec('The first operating evidence.','A verified target register, a negotiated transaction, a funded operating plan, a staff handover and an independently understandable financial record would establish different things. The public workbench keeps them distinct. Early learning could concern a single organisation without reducing the wider ambition to that organisation.',cards=[card('Ownership evidence','Who holds the assets, liabilities, voting rights and economic interests?'),card('Operational evidence','Are customers served, employees paid and critical functions maintained?'),card('Human evidence','What learning, choice and time benefits actually reach people?')]),
- sec('An expandable method.',"The intended reusable asset is a succession and development method that can be adapted by other groups. Repetition would carry the lessons and preserve local choice, rather than copy one institution everywhere. The site's templates, code, source records and licence make that work inspectable.",refs=['D09','P04','P05'])]),
- dict(slug='library',label='Document library',title='The source shelf.<br><em>Its history intact.</em>',intro='Ten supplied working papers and submissions connect the wider project family. Guides identify relevant passages, original filenames, status and unresolved claims rather than silently rewriting the source documents.',kicker='16 / Documents and provenance',image='library',accent='gold',type='library',sections=[
- sec('How these documents are used.',"The library distinguishes an original document, a reading guide and the current site synthesis. Some earlier working papers make stronger claims than later papers or the author's current clarification. A guide does not turn those claims into verified findings. Original files, when present, remain unchanged; no clinical, legal or financial claim is validated merely by inclusion in the archive.",callout='The site follows the later stated C-Hour distinction: voluntary contribution, no dollar conversion and paid work remaining paid. The source record still shows where earlier drafts used different language.',refs=['D05','D09'])]),
- dict(slug='sources',label='Sources & connections',title='Follow the threads.<br><em>Check the source.</em>',intro='Project sources describe the proposal. Official and scientific sources answer different factual questions. Neither category substitutes for the other.',kicker='17 / References and reciprocal links',image='sources',accent='mint',type='sources',sections=[
- sec('A connected project family.','The projects below are related work by Luke Nathan Hayes and collaborators, not evidence of outside endorsements. Mutual Futures links back to each source. Reciprocal links added to source repositories are recorded separately in the repository connection ledger.'),
- sec('Evidence labels travel with claims.',cards=[card('Proposal','A design, intention or desired outcome, not a statement that it already exists.'),card('Prototype','A limited working tool with its actual inputs, functions and omissions stated.'),card('Illustration','A calculation or scenario based on explicitly invented assumptions.'),card('Source record','A document or observation whose provenance and date remain visible.'),card('Research question','An unresolved mechanism, model or test, without a guaranteed answer.'),card('Project horizon','An ambition or proposed milestone, not a confirmed public event or approval.')])])
-])
+PAGES.extend([{'slug': 'roadmap',
+  'label': 'Possible next steps',
+  'title': 'Where could this begin?<br>What would come next?',
+  'intro': 'Start with a real business, a willing owner and a workable plan. Learn from what '
+           'happens, share the results and decide what to try next. The dates below describe '
+           'ambitions, not confirmed events.',
+  'kicker': '15 / Development and evidence',
+  'image': 'roadmap',
+  'accent': 'gold',
+  'type': 'roadmap',
+  'sections': [{'title': 'Let results guide the next step',
+                'text': 'Every stage would need a purpose, resources, people responsible and a way '
+                        'to check the outcome. Those involved could then decide to continue, '
+                        'change direction or stop. A date on this page does not mean an agreement '
+                        'is in place.'},
+               {'title': 'Begin with one workable handover',
+                'text': 'Find a suitable business and a willing owner. Check the finances, agree '
+                        'the purchase, plan the handover and support the staff. Then record '
+                        'whether the business keeps serving customers and whether the intended '
+                        'benefits reach people.',
+                'cards': [{'title': 'Ownership evidence',
+                           'text': 'Who holds the assets, liabilities, voting rights and economic '
+                                   'interests?',
+                           'href': None},
+                          {'title': 'Operational evidence',
+                           'text': 'Are customers served, employees paid and critical functions '
+                                   'maintained?',
+                           'href': None},
+                          {'title': 'Human evidence',
+                           'text': 'What learning, choice and time benefits actually reach people?',
+                           'href': None}]},
+               {'title': 'Share what others can use',
+                'text': 'If a handover works well, other groups could adapt the method. Useful '
+                        'records would include what it cost, what failed and what needed changing. '
+                        'Each group would still make its own decisions and follow the reuse '
+                        'licence.',
+                'refs': ['D09', 'P04', 'P05'],
+                'visual': 'civilisation-upgrade'}]},
+ {'slug': 'library',
+  'label': 'Document library',
+  'title': 'Read the background.<br>See how the ideas developed.',
+  'intro': 'This library brings together guides to ten working papers and submissions behind '
+           'Mutual Futures. Each guide explains the connection and identifies questions still to '
+           'be resolved. The original documents are not yet available here.',
+  'kicker': '16 / Documents and origin and credits',
+  'image': 'library',
+  'accent': 'gold',
+  'type': 'library',
+  'sections': [{'title': 'How to read this library',
+                'text': 'The downloadable reading guides summarise links to the proposal and '
+                        'identify relevant parts of the source papers. They are not the original '
+                        'documents. Earlier papers sometimes use different terms or make stronger '
+                        'claims than later ones. The guides keep those differences visible rather '
+                        'than treating every archived claim as an established fact.',
+                'callout': 'The site follows the later stated C-Hour distinction: voluntary '
+                           'contribution, no dollar conversion and paid work remaining paid. The '
+                           'source record still shows where earlier drafts used different '
+                           'language.',
+                'refs': ['D05', 'D09']}]},
+ {'slug': 'sources',
+  'label': 'Sources & connections',
+  'title': 'Explore the connections.<br>Check the evidence.',
+  'intro': 'Find the projects that shaped these ideas, along with official and scientific sources '
+           'for checking factual claims. Related projects explain the proposal; they do not '
+           'independently prove it will work.',
+  'kicker': '17 / References and reciprocal links',
+  'image': 'sources',
+  'accent': 'mint',
+  'type': 'sources',
+  'sections': [{'title': 'Related projects and independent sources',
+                'text': 'The related projects are work by Luke Nathan Hayes and collaborators. '
+                        'They explain where the ideas came from. Official and scientific sources '
+                        'provide separate information that readers can use to check particular '
+                        'claims.'},
+               {'title': 'What the labels mean',
+                'text': '',
+                'cards': [{'title': 'Proposal',
+                           'text': 'A design, intention or desired outcome, not a statement that '
+                                   'it already exists.',
+                           'href': None},
+                          {'title': 'Prototype',
+                           'text': 'A limited working tool with its actual inputs, functions and '
+                                   'omissions stated.',
+                           'href': None},
+                          {'title': 'Illustration',
+                           'text': 'A calculation or scenario based on explicitly invented '
+                                   'assumptions.',
+                           'href': None},
+                          {'title': 'Source record',
+                           'text': 'A document or observation whose origin and credits and date '
+                                   'remain visible.',
+                           'href': None},
+                          {'title': 'Research question',
+                           'text': 'An unresolved mechanism, model or test, without a guaranteed '
+                                   'answer.',
+                           'href': None},
+                          {'title': 'Project horizon',
+                           'text': 'An ambition or proposed milestone, not a confirmed public '
+                                   'event or approval.',
+                           'href': None}]}]}])

@@ -1,5 +1,5 @@
 - 21 chapter and utility pages, plus a custom 404.
-- Four browser-local tools.
+- Four tool pages, including two funding models.
 - 10 source reading guides.
 - 0 unchanged original documents present in this build.
 - 14 project connections and 15 external source records.

@@ -1,6 +1,10 @@
 #!/usr/bin/env python3
 """Static checks for generated pages, local links, scripts and source integrity."""
 from pathlib import Path
+
+def write_utf8(path, text):
+ return path.write_text(text, encoding="utf-8", newline="\n")
+
 from html.parser import HTMLParser
 from urllib.parse import urlparse,unquote
 import hashlib,json,sys
@@ -20,13 +24,13 @@ class Page(HTMLParser):
    self.links.append(d['href'])
    if d['href'].startswith(('https://','http://')) and (d.get('target')!='_blank' or 'noopener' not in d.get('rel','')):errors.append('External link missing new-tab protection: '+d['href'])
   if tag=='img':
-   if not d.get('alt'):errors.append('Image without alternative text')
+   if 'alt' not in d:errors.append('Image without alternative text attribute')
    self.assets.append(d.get('src',''))
   if tag=='script' and d.get('src'):self.assets.append(d['src'])
   if tag=='link' and d.get('rel') in ('stylesheet','icon','apple-touch-icon'):self.assets.append(d['href'])
 pages={}
 for path in SITE.glob('*.html'):
- parser=Page();parser.feed(path.read_text());pages[path.name]=parser
+ parser=Page();parser.feed(path.read_text(encoding='utf-8'));pages[path.name]=parser
  if parser.h1!=1:errors.append(f'{path.name}: expected one h1, found {parser.h1}')
  if parser.lang!='en-AU':errors.append(path.name+': missing Australian English language tag')
  if not parser.title:errors.append(path.name+': missing title')
@@ -40,7 +44,7 @@ for name,page in pages.items():
   if u.fragment and target.suffix=='.html' and target.name in pages and u.fragment not in pages[target.name].ids:errors.append(f'{name}: missing anchor {url}')
 for path in SITE.rglob('*'):
  if path.suffix.lower() in ['.svg','.woff','.woff2','.ttf','.otf']:errors.append('Unexpected SVG/font file: '+str(path.relative_to(SITE)))
-manifest=json.loads((SITE/'documents/manifest.json').read_text());originals=0
+manifest=json.loads((SITE/'documents/manifest.json').read_text(encoding='utf-8'));originals=0
 for d in manifest:
  if not (SITE/d['guide_path']).exists():errors.append('Missing guide: '+d['id'])
  if d['original_available']:
@@ -49,6 +53,6 @@ for d in manifest:
 if originals<len(manifest):warnings.append(f'{len(manifest)-originals} originals are not in this repository build; the library explicitly reports this.')
 if len(pages)!=22:errors.append(f'Expected 22 HTML pages, found {len(pages)}')
 result={'html_pages':len(pages),'source_guides':len(manifest),'originals_present':originals,'errors':errors,'warnings':warnings}
-(SITE/'check-report.json').write_text(json.dumps(result,indent=2)+'\n')
+write_utf8(SITE/'check-report.json', json.dumps(result,indent=2)+'\n')
 print(json.dumps(result,indent=2))
 if errors:sys.exit(1)
